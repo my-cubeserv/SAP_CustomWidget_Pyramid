@@ -16,19 +16,7 @@ customElements.define('chart-shape', class PyramidChart extends HTMLElement {
 		this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
 		this._shadowRoot.getElementById("shapes").addEventListener("submit", this._submit.bind(this));
 		this._firstConnection = false;
-		this.wData = [];
-		this.properties = {
-	       color: "#000000",
-	       value: 5,
-		   fontsize: 20,
-		   bgcolor1: "#F12712",
-		   bgcolor2: "#22b326",
-		   bgcolor3: "#2681c5",
-		   bgcolor4: "#ECE859",
-		   bgcolor5: "#E035d3",
-		   bgcolor6: "#E08135"
-		};
-				
+		this.wData = [];		
 	}
 	get selection() {
             const result = { ...this._selection, ...(this._selection || {}).measures_0 };
