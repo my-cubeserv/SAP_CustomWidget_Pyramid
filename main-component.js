@@ -133,5 +133,6 @@ constructor() {
 		); 
 	}		
 	//end function	
+	}
    });
 })();
