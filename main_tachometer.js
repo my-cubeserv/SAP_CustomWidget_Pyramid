@@ -34,8 +34,8 @@ constructor() {
 
 	//Draw tachometer
 	async render() {
-		await getScriptPromisify("https://my-cubeserv.github.io/CustomWidget_Tachometer/tachometer_functions.js");
-	//	 $.getScript( "https://my-cubeserv.github.io/CustomWidget_Tachometer/tachometer_functions.js" );
+	//	await getScriptPromisify("https://my-cubeserv.github.io/CustomWidget_Tachometer/tachometer_functions.js");
+		 $.getScript( "https://my-cubeserv.github.io/CustomWidget_Tachometer/tachometer_functions.js" );
 		   const data = {
   //    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],  // legend
       datasets: [{
