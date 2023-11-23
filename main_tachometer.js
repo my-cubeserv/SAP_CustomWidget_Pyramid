@@ -12,7 +12,7 @@ tmpl.innerHTML = `
 
       }
     </style>
-<div class="chartCard" id="Tachometer">
+<div class="chartCard">
       <div class="chartBox" id="chartBox">
         <canvas id="Tachometer" class="Tachometer" is="chart-tachometer"></canvas>
       </div>
