@@ -26,7 +26,7 @@ constructor() {
 	this.style.height = "100%";
 	this.style.display = "block";
 	this._shadowRoot = getElementById("Tachometer").attachShadow({mode: "open"});
-	this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
+	//this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
 	this.shadowRoot.innerHTML = '<h1>Hello Shadow DOM</h1>';
 	//this._shadowRoot.getElementById("Tachometer");
 	//this._firstConnection = false;
