@@ -2,7 +2,7 @@
 	
 let tmpl = document.createElement('template');	
 tmpl.innerHTML = `
-<!--style>      
+<style>      
       .chartCard {
         width: 200;
         height: 200;  
@@ -12,7 +12,7 @@ tmpl.innerHTML = `
         width: 200px;
 
       }
-    </style-->
+    </style>
 <div class="chartCard">
       <div class="chartBox" id="chartBox">
         <canvas id="Tachometer" class="Tachometer" is="chart-tachometer"></canvas>
@@ -25,7 +25,7 @@ constructor() {
 	super();			
 	this.style.height = "100%";
 	this.style.display = "block";
-	this._shadowRoot = getElementById("chartBox").attachShadow({mode: "open"});
+	this._shadowRoot = getElementById("Tachometer").attachShadow({mode: "open"});
 	//this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
 	this.shadowRoot.innerHTML = '<h1>Hello Shadow DOM</h1>';
 	//this._shadowRoot.getElementById("Tachometer");
@@ -141,9 +141,9 @@ constructor() {
 		  config
 		); 
 	}		
-	//end function	
+	//end of function	
 	
    };
 
-	customElements.define('chartBox',Tachometer); 
+	customElements.define('Tachometer',Tachometer); 
 })();
