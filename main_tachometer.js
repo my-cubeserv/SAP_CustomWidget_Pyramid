@@ -25,15 +25,15 @@ constructor() {
 	super();			
 	this.style.height = "100%";
 	this.style.display = "block";
-	this._shadowRoot = this.attachShadow({mode: "open"});
-	this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
+	//this._shadowRoot = this.attachShadow({mode: "open"});
+	//this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
 	//this._shadowRoot.getElementById("Tachometer");
 	//this._firstConnection = false;
 	this.render();		
 	} 
 
 	//Draw tachometer
-	async render() {
+	render() {
 	//	await getScriptPromisify("https://my-cubeserv.github.io/CustomWidget_Tachometer/tachometer_functions.js");
 	//	 $.getScript( "https://my-cubeserv.github.io/CustomWidget_Tachometer/tachometer_functions.js" );
 //*****functions
