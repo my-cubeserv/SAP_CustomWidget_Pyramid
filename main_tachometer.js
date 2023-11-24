@@ -143,7 +143,6 @@ alert( document.getElementById('Tachometer'));
 	}		
 	//end of function	
 	
-return myChart;
    };
 
 	customElements.define("chart-tachometer",Tachometer); 
