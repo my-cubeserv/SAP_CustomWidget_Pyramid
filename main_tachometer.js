@@ -20,7 +20,7 @@ tmpl.innerHTML = `
     </div>
 `;
 
-customElements.define('chart-tachometer', class Tachometer extends HTMLElement {	
+class Tachometer extends HTMLElement {	
 constructor() {
 	super();			
 	this.style.height = "100%";
@@ -144,4 +144,6 @@ constructor() {
 	//end function	
 	
    });
+
+	customElements.define('chart-tachometer',Tachometer); 
 })();
