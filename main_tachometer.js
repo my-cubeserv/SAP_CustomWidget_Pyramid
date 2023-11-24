@@ -142,10 +142,10 @@ constructor() {
 		  },
 		  plugins:[gaugeNeedle]
 		};
-alert( document.getElementById('Tachometer'));
+alert( this._shadowRoot.getElementById("Tachometer"));
 		// render init block
 		const myChart = new Chart(
-		  document.getElementById('Tachometer'),
+		  this._shadowRoot.getElementById('Tachometer'),
 		  config
 		); 
 		
