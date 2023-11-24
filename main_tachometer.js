@@ -30,7 +30,7 @@ constructor() {
 	this.shadowRoot.innerHTML = '<h1>Hello Shadow DOM</h1>';
 	//this._shadowRoot.getElementById("Tachometer");
 	//this._firstConnection = false;
-	this.render();		
+	//this.render();		
 	} 
 
 	//Draw tachometer
