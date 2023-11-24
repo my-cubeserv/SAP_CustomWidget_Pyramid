@@ -2,17 +2,25 @@
 	
 let tmpl = document.createElement('template');	
 tmpl.innerHTML = `
-<style>      
-     .chartCard {
-        width: 300;
-        height: 300;  
-	//background: #F8E8D4;
-	 background: transparent;
+ * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      .chartCard {
+        width: 100vw;
+        height: calc(100vh - 40px);
+        background: rgba(54, 162, 235, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .chartBox {
-        width: 200px;
-	background: #D3FFFA;
- 	
+        width: 700px;
+        padding: 20px;
+        border-radius: 20px;
+        border: solid 3px rgba(54, 162, 235, 1);
+        background: white;
       }
     </style>
         <div class="chartCard">
@@ -52,7 +60,7 @@ constructor() {
 
 //**** end functions *****
 		   const data = {
-  //    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],  // legend
+      labels: ['10%', '20%', '30%', '40%'],  // legend
       datasets: [{
         label: 'Percentage value',
         data: [20, 20, 10, 10, 20, 30],
@@ -124,8 +132,7 @@ constructor() {
 			ctx.restore();
 		}
 	}
-	//draw labels
-		generateTickLabels(0);
+
 		
 	// config 
 	const config = {
@@ -136,9 +143,8 @@ constructor() {
 			plugins:
 			{
 			legend: {
-			display: false
-			
-			}
+			display: false	}
+			ticks:{ display: true}
 			}
 		  },
 		  plugins:[gaugeNeedle]
