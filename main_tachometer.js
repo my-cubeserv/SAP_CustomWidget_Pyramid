@@ -32,7 +32,7 @@ constructor() {
 	//this._firstConnection = false;
 	//this.render();		
 	} 
-
+return;
    };
 
 	customElements.define("chart-tachometer",Tachometer); 
