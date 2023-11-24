@@ -27,10 +27,9 @@ constructor() {
 	this.style.display = "block";
 	this._shadowRoot = this.attachShadow({mode: "open"});
 	this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
-	this._shadowRoot.getElementById("Tachometer");
-	this._firstConnection = false;
-
-    this.render();		
+	//this._shadowRoot.getElementById("Tachometer");
+	//this._firstConnection = false;
+	this.render();		
 	} 
 
 	//Draw tachometer
