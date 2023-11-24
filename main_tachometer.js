@@ -9,18 +9,16 @@ tmpl.innerHTML = `
         font-family: sans-serif;
       }
       .chartCard {
-        width: 100vw;
-        height: calc(100vh - 40px);
-        background: rgba(54, 162, 235, 0.2);
+        width: 100%;
+        height: 300px;        
         display: flex;
         align-items: center;
         justify-content: center;
       }
       .chartBox {
-        width: 700px;
+        width: 300px;
         padding: 20px;
         border-radius: 20px;
-        border: solid 3px rgba(54, 162, 235, 1);
         background: white;
       }
     </style>
