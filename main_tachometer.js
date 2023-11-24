@@ -2,7 +2,7 @@
 	
 let tmpl = document.createElement('template');	
 tmpl.innerHTML = `
- * {
+  {
         margin: 0;
         padding: 0;
         font-family: sans-serif;
