@@ -6,7 +6,7 @@ tmpl.innerHTML = `
       .chartCard {
         width: 200;
         height: 200;  
-	background: #1A1A1A;
+	background: #F8E8D4;
       }
       .chartBox {
         width: 200px;
@@ -30,7 +30,7 @@ constructor() {
 	//this._shadowRoot.getElementById("Tachometer");
 	this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
 	//this._firstConnection = false;
-	//this.render();		
+	this.render();		
 	} 
 		//Draw tachometer
 	render() {
