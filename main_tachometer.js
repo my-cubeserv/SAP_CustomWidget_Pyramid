@@ -139,6 +139,7 @@ constructor() {
 		  document.getElementById('Tachometer'),
 		  config
 		); 
+		return myChart;
 	}		
 	//end of function	
 	
