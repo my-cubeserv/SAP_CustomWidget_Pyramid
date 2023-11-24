@@ -146,4 +146,4 @@ constructor() {
    };
 
 	customElements.define('Tachometer',Tachometer); 
-/})();
+//})();
