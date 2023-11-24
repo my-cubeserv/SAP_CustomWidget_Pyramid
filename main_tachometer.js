@@ -3,11 +3,11 @@
 let tmpl = document.createElement('template');	
 tmpl.innerHTML = `
 <style>      
-    /*  .chartCard {
-        width: 200;
-        height: 200;  
+     .chartCard {
+        width: 300;
+        height: 300;  
 	background: #F8E8D4;
-      }*/
+      }
       .chartBox {
         width: 200px;
 	background: #D3FFFA;
@@ -24,8 +24,8 @@ tmpl.innerHTML = `
 class Tachometer extends HTMLElement {	
 constructor() {
 	super();			
-	this.style.height = "100%";
-	this.style.display = "block";
+	//this.style.height = "100%";
+	/this.style.display = "block";
 	this._shadowRoot = this.attachShadow({mode: "open"});
 	this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
 	this.render();		
