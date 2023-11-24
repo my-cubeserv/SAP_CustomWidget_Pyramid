@@ -6,11 +6,13 @@ tmpl.innerHTML = `
      .chartCard {
         width: 300;
         height: 300;  
-	background: #F8E8D4;
+	//background: #F8E8D4;
+	 background: transparent;
       }
       .chartBox {
         width: 200px;
 	background: #D3FFFA;
+ 	
       }
     </style>
         <div class="chartCard">
@@ -24,8 +26,8 @@ tmpl.innerHTML = `
 class Tachometer extends HTMLElement {	
 constructor() {
 	super();			
-	//this.style.height = "100%";
-	//this.style.display = "block";
+	this.style.height = "100%";
+	this.style.display = "block";
 	this._shadowRoot = this.attachShadow({mode: "open"});
 	this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
 	this.render();		
@@ -122,7 +124,9 @@ constructor() {
 			ctx.restore();
 		}
 	}
-
+	//draw labels
+		generateTickLabels(0);
+		
 	// config 
 	const config = {
 		  type: 'doughnut',
