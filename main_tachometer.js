@@ -3,11 +3,11 @@
 let tmpl = document.createElement('template');	
 tmpl.innerHTML = `
 <style>      
-      .chartCard {
+    /*  .chartCard {
         width: 200;
         height: 200;  
 	background: #F8E8D4;
-      }
+      }*/
       .chartBox {
         width: 200px;
 	background: #D3FFFA;
@@ -27,10 +27,7 @@ constructor() {
 	this.style.height = "100%";
 	this.style.display = "block";
 	this._shadowRoot = this.attachShadow({mode: "open"});
-	this._shadowRoot.innerHTML = "<h1>Hello Shadow DOM</h1>";
-	//this._shadowRoot.getElementById("Tachometer");
 	this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
-	//this._firstConnection = false;
 	this.render();		
 	} 
 	connectedCallback() {
@@ -142,7 +139,6 @@ constructor() {
 		  },
 		  plugins:[gaugeNeedle]
 		};
-alert( this._shadowRoot.getElementById("Tachometer"));
 		// render init block
 		const myChart = new Chart(
 		  this._shadowRoot.getElementById('Tachometer'),
