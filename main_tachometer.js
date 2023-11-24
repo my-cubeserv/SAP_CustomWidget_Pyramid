@@ -141,10 +141,7 @@ constructor() {
 		  options: {
 		  aspectRation: 1.8,
 			plugins:
-			{
-			legend: {
-			display: false	}
-			ticks:{ display: true}
+			{ legend: { display: false }			
 			}
 		  },
 		  plugins:[gaugeNeedle]
