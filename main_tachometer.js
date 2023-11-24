@@ -6,6 +6,7 @@ tmpl.innerHTML = `
       .chartCard {
         width: 200;
         height: 200;  
+	background: #1A1A1A;
       }
       .chartBox {
         width: 200px;
