@@ -55,6 +55,10 @@ tmpl.innerHTML = `
     </style>
         <div class="chartCard">
       <div class="chartBox">
+	<div id = "DataLablesLeft" class="labelleft" ></div>
+	<div id = "DataLablesTop" class="labeltop" ></div>
+	<div id = "DataLablesRight" class="labelright" ></div>	
+	<div id = "DataInfo" class="datainfo" ></div>
         <canvas id="Tachometer" is="chart-tachometer"></canvas>
       </div>
     </div>  
