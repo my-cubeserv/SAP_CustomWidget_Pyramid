@@ -190,16 +190,16 @@ const label = ['10%', '20%', '30%', '40%'];
 	}		
 	//end of function
 //  set data labels
-const currdiv =  document.getElementById("DataLablesLeft");
+const currdiv =  this._shadowRoot.getElementById("DataLablesLeft");
 currdiv.textContent= "0%" ;
-const currdiv2 =  document.getElementById("DataLablesTop");
+const currdiv2 =  this._shadowRoot.getElementById("DataLablesTop");
 currdiv2.textContent= "50%" ;
-const currdiv3 =  document.getElementById("DataLablesRight");
+const currdiv3 =  this._shadowRoot.getElementById("DataLablesRight");
 currdiv3.textContent= "100%" ;
-const currdiv4 =  document.getElementById("DataInfo");
+const currdiv4 =  dthis._shadowRoot.getElementById("DataInfo");
 currdiv4.textContent= "1200" + " | " + "300" ;
 
-var box = document.getElementById("chartbox");
+var box = this._shadowRoot.getElementById("chartbox");
 
 var boxwidth = box.offsetWidth;
 var boxheight = box.offsetHeight;
