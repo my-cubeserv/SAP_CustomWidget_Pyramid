@@ -87,9 +87,9 @@ constructor() {
   }
 	//When the custom widget resized
 onCustomWidgetResize() {
-	this.render();
 	this.setstyles();
-	}
+	this.render();	
+}
 setstyles()
 {
 //  set data labels
@@ -109,10 +109,13 @@ var boxwidth = box.offsetWidth;
 var boxheight = box.offsetHeight;
 
 currdiv.style.top =  (boxheight-boxheight/3 +10) + "px";
+currdiv.style.width ="100%";
 currdiv2.style.top = (boxheight/4 - 20) + "px";
 currdiv2.style.left = (boxwidth/2) + "px" ;
+currdiv2.style.width ="90%";
 currdiv3.style.top = (boxheight-boxheight/3 +10) + "px";
 currdiv3.style.left = (boxwidth -40) + "px";
+currdiv3.style.width ="90%";
 currdiv4.style.top = (boxheight-boxheight/4.5 ) + "px";
 }
 	
@@ -155,7 +158,7 @@ const label = ['10%', '20%', '30%', '40%'];
         borderWidth: borderwith,
 		circumference: 180,
 		rotation: 270,
-		cutot:'100%',
+		cutot:'95%',
 		borderRadius: borderradus,
 		 needleValue: 0
       }]
