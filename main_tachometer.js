@@ -87,7 +87,8 @@ constructor() {
   }
 	//When the custom widget resized
 onCustomWidgetResize() {
-	this.setstyles();
+	this.style.height = "100%";
+	this.style.display = "block";
 	this.render();	
 	this.setstyles();
 }
