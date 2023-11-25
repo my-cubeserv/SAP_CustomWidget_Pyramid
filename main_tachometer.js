@@ -3,31 +3,61 @@
 let tmpl = document.createElement('template');	
 tmpl.innerHTML = `
  <style>
-  * {
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-      }
-      .chartCard {
-        width: 100%;
-        height: 300px;        
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        .chartCard {
+        width: 300px;
+		height: auto;
+		border-color: black;
+		margin-bottom:0px;
+		padding-bottom: 0px;
+		//background: #F58EFF;
+		padding-top: 0px;	
+		margin-top:0px;	
       }
       .chartBox {
-        width: 300px;
-        padding: 20px;
-        border-radius: 20px;
-        background: white;
+        width: 260px;
+		height:auto;		
+		padding-left: 20px;	
+		padding-right: 20px;	
+		position: relative;
+		//background: green;	
+	    margin-bottom:0px;
+	    padding-bottom: 0px;
+		padding-top: 0px;	
+		margin-top:0px;		
       }
+	  .Title {
+		text-align: center;
+		//background: orange;
+		position: absolute;
+		top: 10px;
+		width: 300px;
+		font-size:12px;
+	  }
+	  .labelleft {
+	 position: absolute;
+	 left: 0px;
+	 font-size:12px;
+	  }
+	 .labeltop {
+	  position: absolute;
+	  font-size:12px;
+		}	
+	  .labelright {
+	  position: absolute;
+	  font-size:12px;
+	}
+	.datainfo {
+	  position: absolute;
+	font-size:12px;	
+	text-align: center;	
+	width: 260px;
+	  }
     </style>
         <div class="chartCard">
       <div class="chartBox">
         <canvas id="Tachometer" is="chart-tachometer"></canvas>
       </div>
-    </div>
-  
+    </div>  
 `;
 
 class Tachometer extends HTMLElement {	
@@ -158,9 +188,34 @@ const label = ['10%', '20%', '30%', '40%'];
 		); 
 		
 	}		
-	//end of function	
+	//end of function
+//  set data labels
+const currdiv =  document.getElementById("DataLablesLeft");
+currdiv.textContent= "0%" ;
+const currdiv2 =  document.getElementById("DataLablesTop");
+currdiv2.textContent= "50%" ;
+const currdiv3 =  document.getElementById("DataLablesRight");
+currdiv3.textContent= "100%" ;
+const currdiv4 =  document.getElementById("DataInfo");
+currdiv4.textContent= "1200" + " | " + "300" ;
+
+var box = document.getElementById("chartbox");
+
+var boxwidth = box.offsetWidth;
+var boxheight = box.offsetHeight;
+
+currdiv.style.top =  (boxheight-boxheight/3 +10) + "px";
+
+currdiv2.style.top = (boxheight/4 - 20) + "px";
+currdiv2.style.left = (boxwidth/2) + "px" ;
+
+currdiv3.style.top = (boxheight-boxheight/3 +10) + "px";
+currdiv3.style.left = (boxwidth -20) + "px";
+
+currdiv4.style.top = (boxheight-boxheight/7 ) + "px";
+//currdiv4.style.left = (boxwidth/3) + "px";
+
 	
    };
-
 	customElements.define("chart-tachometer",Tachometer); 
 //})();
