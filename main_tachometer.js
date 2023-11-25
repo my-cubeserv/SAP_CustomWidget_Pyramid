@@ -94,7 +94,7 @@ const currdiv2 =  this._shadowRoot.getElementById("DataLablesTop");
 currdiv2.textContent= "50%" ;
 const currdiv3 =  this._shadowRoot.getElementById("DataLablesRight");
 currdiv3.textContent= "100%" ;
-const currdiv4 =  dthis._shadowRoot.getElementById("DataInfo");
+const currdiv4 =  this._shadowRoot.getElementById("DataInfo");
 currdiv4.textContent= "1200" + " | " + "300" ;
 
 var box = this._shadowRoot.getElementById("chartbox");
@@ -103,7 +103,7 @@ var boxwidth = box.offsetWidth;
 var boxheight = box.offsetHeight;
 
 currdiv.style.top =  (boxheight-boxheight/3 +10) + "px";
-alert(currdiv.style.top);
+//alert(currdiv.style.top);
 currdiv2.style.top = (boxheight/4 - 20) + "px";
 currdiv2.style.left = (boxwidth/2) + "px" ;
 
