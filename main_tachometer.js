@@ -103,7 +103,7 @@ var boxwidth = box.offsetWidth;
 var boxheight = box.offsetHeight;
 
 currdiv.style.top =  (boxheight-boxheight/3 +10) + "px";
-alertcurrdiv.style.top);
+alert(currdiv.style.top);
 currdiv2.style.top = (boxheight/4 - 20) + "px";
 currdiv2.style.left = (boxwidth/2) + "px" ;
 
