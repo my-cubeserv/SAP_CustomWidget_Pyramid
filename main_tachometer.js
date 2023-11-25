@@ -77,13 +77,45 @@ constructor() {
 	connectedCallback() {
    		this._firstConnection = true;
 		this.render();
+		this.setstyles();
   	}
 
 		disconnectedCallback() {
    this._connected = false;
   }
-		//Draw tachometer
-	render() {
+
+setstyles()
+{
+		//  set data labels
+const currdiv =  this._shadowRoot.getElementById("DataLablesLeft");
+alert(this._shadowRoot.getElementById("DataLablesLeft"));
+currdiv.textContent= "0%" ;
+const currdiv2 =  this._shadowRoot.getElementById("DataLablesTop");
+currdiv2.textContent= "50%" ;
+const currdiv3 =  this._shadowRoot.getElementById("DataLablesRight");
+currdiv3.textContent= "100%" ;
+const currdiv4 =  dthis._shadowRoot.getElementById("DataInfo");
+currdiv4.textContent= "1200" + " | " + "300" ;
+
+var box = this._shadowRoot.getElementById("chartbox");
+
+var boxwidth = box.offsetWidth;
+var boxheight = box.offsetHeight;
+
+currdiv.style.top =  (boxheight-boxheight/3 +10) + "px";
+
+currdiv2.style.top = (boxheight/4 - 20) + "px";
+currdiv2.style.left = (boxwidth/2) + "px" ;
+
+currdiv3.style.top = (boxheight-boxheight/3 +10) + "px";
+currdiv3.style.left = (boxwidth -20) + "px";
+
+currdiv4.style.top = (boxheight-boxheight/7 ) + "px";
+//currdiv4.style.left = (boxwidth/3) + "px";
+}
+	
+//Draw tachometer
+render() {
 
 
 //*****functions
@@ -194,34 +226,8 @@ const label = ['10%', '20%', '30%', '40%'];
 		
 	}		
 	//end of function
-//  set data labels
-const currdiv =  this._shadowRoot.getElementById("DataLablesLeft");
-alert(this._shadowRoot.getElementById("DataLablesLeft"));
-currdiv.textContent= "0%" ;
-const currdiv2 =  this._shadowRoot.getElementById("DataLablesTop");
-currdiv2.textContent= "50%" ;
-const currdiv3 =  this._shadowRoot.getElementById("DataLablesRight");
-currdiv3.textContent= "100%" ;
-const currdiv4 =  dthis._shadowRoot.getElementById("DataInfo");
-currdiv4.textContent= "1200" + " | " + "300" ;
-
-var box = this._shadowRoot.getElementById("chartbox");
-
-var boxwidth = box.offsetWidth;
-var boxheight = box.offsetHeight;
-
-currdiv.style.top =  (boxheight-boxheight/3 +10) + "px";
-
-currdiv2.style.top = (boxheight/4 - 20) + "px";
-currdiv2.style.left = (boxwidth/2) + "px" ;
-
-currdiv3.style.top = (boxheight-boxheight/3 +10) + "px";
-currdiv3.style.left = (boxwidth -20) + "px";
-
-currdiv4.style.top = (boxheight-boxheight/7 ) + "px";
-//currdiv4.style.left = (boxwidth/3) + "px";
-
 	
    };
 	customElements.define("chart-tachometer",Tachometer); 
+
 //})();
