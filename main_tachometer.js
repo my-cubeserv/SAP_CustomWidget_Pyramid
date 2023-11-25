@@ -9,7 +9,7 @@ tmpl.innerHTML = `
 		border-color: black;
 		margin-bottom:0px;
 		padding-bottom: 0px;
-		background: #F58EFF;
+		//background: #F58EFF;
 		padding-top: 0px;	
 		margin-top:0px;	
       }
@@ -19,7 +19,7 @@ tmpl.innerHTML = `
 		padding-left: 20px;	
 		padding-right: 20px;	
 		position: relative;
-		background: green;	
+		//background: green;	
 	    margin-bottom:0px;
 	    padding-bottom: 0px;
 		padding-top: 0px;	
@@ -27,7 +27,7 @@ tmpl.innerHTML = `
       }
 	  .Title {
 		text-align: center;
-		background: orange;
+		//background: orange;
 		position: absolute;
 		top: 10px;
 		width: 300px;
@@ -103,7 +103,7 @@ var boxwidth = box.offsetWidth;
 var boxheight = box.offsetHeight;
 
 currdiv.style.top =  (boxheight-boxheight/3 +10) + "px";
-
+alertcurrdiv.style.top);
 currdiv2.style.top = (boxheight/4 - 20) + "px";
 currdiv2.style.left = (boxwidth/2) + "px" ;
 
