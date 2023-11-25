@@ -16,7 +16,7 @@ tmpl.innerHTML = `
       .chartBox {
         width: 90%;
 		height:auto;		
-		padding-left: 20px;	
+		padding-left: 30px;	
 		padding-right: 20px;	
 		position: relative;
 		//background: green;	
@@ -109,9 +109,9 @@ currdiv2.style.top = (boxheight/4 - 20) + "px";
 currdiv2.style.left = (boxwidth/2) + "px" ;
 
 currdiv3.style.top = (boxheight-boxheight/3 +10) + "px";
-//currdiv3.style.left = (boxwidth -40) + "px";
+currdiv3.style.left = (boxwidth -40) + "px";
 
-currdiv4.style.top = (boxheight-boxheight/4 ) + "px";
+currdiv4.style.top = (boxheight-boxheight/4.5 ) + "px";
 //currdiv4.style.left = (boxwidth/3) + "px";
 }
 	
