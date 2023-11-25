@@ -113,10 +113,10 @@ currdiv.style.top =  (boxheight-boxheight/3 +10) + "px";
 currdiv.style.width ="100%";
 currdiv2.style.top = (boxheight/4 - 20) + "px";
 currdiv2.style.left = (boxwidth/2) + "px" ;
-currdiv2.style.width ="90%";
+currdiv2.style.width ="100%";
 currdiv3.style.top = (boxheight-boxheight/3 +10) + "px";
 currdiv3.style.left = (boxwidth -40) + "px";
-currdiv3.style.width ="90%";
+currdiv3.style.width ="100%";
 currdiv4.style.top = (boxheight-boxheight/4.5 ) + "px";
 }
 	
