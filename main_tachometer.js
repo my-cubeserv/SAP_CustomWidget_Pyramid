@@ -30,7 +30,7 @@ tmpl.innerHTML = `
 		//background: orange;
 		position: absolute;
 		top: 10px;
-		width: 300px;
+		width: 90%;
 		font-size:12px;
 	  }
 	  .labelleft {
@@ -107,7 +107,7 @@ currdiv.style.top =  (boxheight-boxheight/3 +10) + "px";
 currdiv2.style.top = (boxheight/4 - 20) + "px";
 currdiv2.style.left = (boxwidth/2) + "px" ;
 
-currdiv3.style.top = (boxheight-boxheight/3 +10) + "px";
+currdiv3.style.top = (boxheight-boxheight/3 ) + "px";
 currdiv3.style.left = (boxwidth -20) + "px";
 
 currdiv4.style.top = (boxheight-boxheight/7 ) + "px";
