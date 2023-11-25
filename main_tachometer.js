@@ -53,15 +53,16 @@ tmpl.innerHTML = `
 	width: 260px;
 	  }
     </style>
-        <div class="chartCard">
-      <div class="chartBox">
-	<div id = "DataLablesLeft" class="labelleft" ></div>
-	<div id = "DataLablesTop" class="labeltop" ></div>
-	<div id = "DataLablesRight" class="labelright" ></div>	
-	<div id = "DataInfo" class="datainfo" ></div>
-        <canvas id="Tachometer" is="chart-tachometer"></canvas>
-      </div>
-    </div>  
+     <div class="chartCard" id="chartcard">
+	<div class="Title">test</div>
+	<div class="chartBox" id="chartbox">
+		<div id = "DataLablesLeft" class="labelleft" ></div>
+		<div id = "DataLablesTop" class="labeltop" ></div>
+		<div id = "DataLablesRight" class="labelright" ></div>	
+		<div id = "DataInfo" class="datainfo" ></div>	
+		<canvas id="Tachometer" ></canvas>			
+	</div>
+    </div>
 `;
 
 class Tachometer extends HTMLElement {	
@@ -195,6 +196,7 @@ const label = ['10%', '20%', '30%', '40%'];
 	//end of function
 //  set data labels
 const currdiv =  this._shadowRoot.getElementById("DataLablesLeft");
+alert(this._shadowRoot.getElementById("DataLablesLeft"));
 currdiv.textContent= "0%" ;
 const currdiv2 =  this._shadowRoot.getElementById("DataLablesTop");
 currdiv2.textContent= "50%" ;
