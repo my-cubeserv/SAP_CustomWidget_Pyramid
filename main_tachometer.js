@@ -89,6 +89,7 @@ constructor() {
 onCustomWidgetResize() {
 	this.setstyles();
 	this.render();	
+	this.setstyles();
 }
 setstyles()
 {
