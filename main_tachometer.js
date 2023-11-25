@@ -35,7 +35,7 @@ tmpl.innerHTML = `
 	  }
 	  .labelleft {
 	 position: absolute;
-	 left: 0px;
+	 left: 5px;
 	 font-size:12px;
 	  }
 	 .labeltop {
