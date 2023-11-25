@@ -87,7 +87,7 @@ constructor() {
   }
 	//When the custom widget resized
 onCustomWidgetResize() {
-	this.render();
+	//this.render();
 	this.setstyles();
 	}
 setstyles()
