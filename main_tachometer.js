@@ -4,22 +4,22 @@ let tmpl = document.createElement('template');
 tmpl.innerHTML = `
  <style>
         .chartCard {
-        width: 300px;
+        width: 100%;
 		height: auto;
 		border-color: black;
 		margin-bottom:0px;
 		padding-bottom: 0px;
-		//background: #F58EFF;
+		background: #F58EFF;
 		padding-top: 0px;	
 		margin-top:0px;	
       }
       .chartBox {
-        width: 260px;
+        width: 90%;
 		height:auto;		
 		padding-left: 20px;	
 		padding-right: 20px;	
 		position: relative;
-		//background: green;	
+		background: green;	
 	    margin-bottom:0px;
 	    padding-bottom: 0px;
 		padding-top: 0px;	
@@ -27,7 +27,7 @@ tmpl.innerHTML = `
       }
 	  .Title {
 		text-align: center;
-		//background: orange;
+		background: orange;
 		position: absolute;
 		top: 10px;
 		width: 300px;
@@ -50,7 +50,7 @@ tmpl.innerHTML = `
 	  position: absolute;
 	font-size:12px;	
 	text-align: center;	
-	width: 260px;
+	width: 90%;
 	  }
     </style>
      <div class="chartCard" id="chartcard">
@@ -86,9 +86,9 @@ constructor() {
 
 setstyles()
 {
-		//  set data labels
+//  set data labels
 const currdiv =  this._shadowRoot.getElementById("DataLablesLeft");
-alert(this._shadowRoot.getElementById("DataLablesLeft"));
+
 currdiv.textContent= "0%" ;
 const currdiv2 =  this._shadowRoot.getElementById("DataLablesTop");
 currdiv2.textContent= "50%" ;
