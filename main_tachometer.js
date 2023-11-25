@@ -85,7 +85,11 @@ constructor() {
 		disconnectedCallback() {
    this._connected = false;
   }
-
+	//When the custom widget resized
+onCustomWidgetResize() {
+	this.render();
+	this.setstyles();
+	}
 setstyles()
 {
 //  set data labels
