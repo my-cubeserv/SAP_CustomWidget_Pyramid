@@ -95,7 +95,7 @@ constructor() {
 		   bgcolor5: "#E035d3",
 		   bgcolor6: "#E08135"
 		};	
-	this.render();	
+	//this.render();	
 	} 
 	
 	get selection() {
@@ -198,26 +198,27 @@ constructor() {
 	redrawChart() {            
 		// indicate result state: "error" and an appropriate message
 		const myDataSource = this._props.myDataSource;
-		if (!myDataSource.data.length
+		/*if (!myDataSource.data.length
 			|| Object.keys(myDataSource.metadata.dimensions).length === 0
 			|| Object.keys(myDataSource.metadata.mainStructureMembers).length === 0) {
 			this._shadowRoot.innerHTML = "<h1>No data</h1>";
 			return;
-		}
+		}*/
 		this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
-		
+				
 		const data = myDataSource.data;
 		
 		if(data)
 		{
 			this.wData = this.parseData(JSON.parse(JSON.stringify(data)));
 							
-			if (this.wData.length === 0) {
+			/*if (this.wData.length === 0) {
 				this._shadowRoot.innerHTML = "<h1>Select \"Include Parent Elements\" in Hierarchy Menu.</h1>";
 				return;
-			}
-			this.render();
+			}*/			
 		}
+		alert(this.wData.length);
+		this.render();
 	}
 
 	//Collect data array
