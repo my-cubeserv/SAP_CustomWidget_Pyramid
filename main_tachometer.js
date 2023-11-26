@@ -61,7 +61,7 @@ tmpl.innerHTML = `
 		<div id = "DataLablesLeft" class="labelleft" ></div>
 		<div id = "DataLablesTop" class="labeltop" ></div>
 		<div id = "DataLablesRight" class="labelright" ></div>	
-		<div id = "DataInfo" class="datainfo" ></div>	
+		<div id = "DataInfo" class="datainfo" id="datainfo"></div>	
 		<canvas id="Tachometer" ></canvas>			
 	</div>
     </div>
