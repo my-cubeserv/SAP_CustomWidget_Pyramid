@@ -99,8 +99,13 @@ resize(w,h)
 {
 	const tmcard= this._shadowRoot.getElementById("chartcard");
 	tmcard.style.width = w;	
+	tmcard.style.height = h;
 	const tmtitle = this._shadowRoot.getElementById("title");
-	tmtitle.style.width = w;	
+	tmtitle.style.width = w;
+	const tmpbox = this._shadowRoot.getElementById("chartbox");
+	tmcard.style.width = w - 50;
+	const tmpinfo = this._shadowRoot.getElementById("datainfo");
+	tmpinfo.style.width = w ;
 }
 setstyles()
 {
