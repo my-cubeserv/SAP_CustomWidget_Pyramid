@@ -95,7 +95,6 @@ constructor() {
 		   bgcolor5: "#E035d3",
 		   bgcolor6: "#E08135"
 		};	
-	//this.render();	
 	} 
 	
 	get selection() {
@@ -335,9 +334,10 @@ const label = ['10%', '20%', '30%', '40%'];
 	const datavalue = 0;
 	if (ndata)
 	{
+		alert(ndata.length + " "+ ndata[0])
 		if( ndata.length > 0)
 		{
-			datavalue = ndata[1];
+			datavalue = ndata[0];
 		}
 	}
 		const data = {
