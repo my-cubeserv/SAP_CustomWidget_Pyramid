@@ -117,6 +117,8 @@ resize(w,h)
 	tmpbox.style.width = w - 50;
 	const tmpinfo = this._shadowRoot.getElementById("DataInfo");
 	tmpinfo.style.width = w ;
+	const tmpinfo = this._shadowRoot.getElementById("Tachometer");
+	tmpinfo.style.width = w-60 ;
 }
 setstyles()
 {
