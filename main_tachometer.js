@@ -331,15 +331,16 @@ const label = ['10%', '20%', '30%', '40%'];
         ];
 	const borderradus = 5;
 	const borderwith = 1;
-	const datavalue = 0;
+	var tmvalue = 0;
 	if (ndata)
 	{
-		alert(ndata.length + " "+ ndata[0])
 		if( ndata.length > 0)
 		{
-			datavalue = ndata[0];
+			tmvalue = ndata[0];
 		}
+
 	}
+	const datavalue = tmvalue;
 		const data = {
       labels: label,  // legend
       datasets: [{
