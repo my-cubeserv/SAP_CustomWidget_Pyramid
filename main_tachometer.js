@@ -63,16 +63,16 @@ tmpl.innerHTML = `
         background: #9FFCFD;
    }*/
     </style>
-     <div class="chartCard" id="chartcard">
-	<!--div class="Title" id="title">test</div-->
+     <div class="chartCard" id="chartcard">	
 	<div class="chartBox" id="chartbox">
-		<!--div id = "DataLablesLeft" class="labelleft" ></div>
-		<div id = "DataLablesTop" class="labeltop" ></div>
-		<div id = "DataLablesRight" class="labelright" ></div>	
-		<div id = "DataInfo" class="datainfo"></div-->	
 		<canvas id="Tachometer" class="canvas"></canvas>			
 	</div>
     </div>
+    <div class="Title" id="title">test</div>
+<div id = "DataLablesLeft" class="labelleft" ></div>
+<div id = "DataLablesTop" class="labeltop" ></div>
+<div id = "DataLablesRight" class="labelright" ></div>	
+<div id = "DataInfo" class="datainfo"></div>	
 `;
 
 class Tachometer extends HTMLElement {	
