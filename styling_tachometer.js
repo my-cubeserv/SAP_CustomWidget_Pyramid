@@ -39,7 +39,7 @@
         </form>\
     ';
 
-    class PyramidChartProperties extends HTMLElement {
+    class TachometerChartProperties extends HTMLElement {
         constructor() {
             super();
             this._shadowRoot = this.attachShadow({ mode: 'open' });
@@ -54,7 +54,6 @@
                     this.dispatchEvent(new CustomEvent('propertiesChanged', {
                         "detail": {
                             "properties": {
-								value: this.value,
                                 color: this.color,
 								fontsize: this.fontsize,
 								bgColor1: this.bgColor1,
@@ -76,7 +75,6 @@
             this.dispatchEvent(new CustomEvent('propertiesChanged', {
                 "detail": {
                     "properties": {
-                        value: this.value,
                         color: this.color,
 						fontsize: this.fontsize,
 						bgcolor1: this.bgcolor1,
@@ -147,5 +145,5 @@
 
     }
 
-    customElements.define('chart-style', PyramidChartProperties);
+    customElements.define('chart-style', TachometerChartProperties);
 })();
