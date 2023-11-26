@@ -87,8 +87,7 @@ constructor() {
 	this.wData = [];
 		this.properties = {
 	       color: "#000000",
-	       value: 5,
-		   fontsize: 20,
+	      	   fontsize: 20,
 		   bgcolor1: "#F12712",
 		   bgcolor2: "#22b326",
 		   bgcolor3: "#2681c5",
