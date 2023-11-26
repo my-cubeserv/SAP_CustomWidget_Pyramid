@@ -101,9 +101,11 @@ onCustomWidgetResize() {
 	this.width = this._shadowRoot.host.offsetWidth;
         this.height = this._shadowRoot.host.offsetHeight;
         this._needsRedraw = true;
+	this.style.height = "100%";
+	this.style.display = "block";
 	this.resize(this.width,this.height);
 	this.render();	
-	//this.setstyles( );
+	this.setstyles( );
 	
 }
 resize(w,h)
