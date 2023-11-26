@@ -9,7 +9,7 @@ tmpl.innerHTML = `
 		border-color: black;
 		margin-bottom:0px;
 		padding-bottom: 0px;
-		background: #F58EFF;
+	//	background: #F58EFF;
   		//background: transparent;
 		padding-top: 0px;	
 		margin-top:0px;	
@@ -109,16 +109,16 @@ resize(w,h)
 {
 	const tmcard= this._shadowRoot.getElementById("chartcard");
 	tmcard.style.width = w;	
-	tmcard.style.height = h;
+	//tmcard.style.height = h;
 	
-	const tmpbox = this._shadowRoot.getElementById("chartbox");
-	tmpbox.style.width = w;
+	//const tmpbox = this._shadowRoot.getElementById("chartbox");
+	//tmpbox.style.width = w;
 	/*const tmtitle = this._shadowRoot.getElementById("title");
 	tmtitle.style.width = w;
 	const tmpinfo = this._shadowRoot.getElementById("DataInfo");
 	tmpinfo.style.width = w ;*/
-	const tmpcanvas = this._shadowRoot.getElementById("Tachometer");
-	tmpcanvas.style.width = w ;
+	//const tmpcanvas = this._shadowRoot.getElementById("Tachometer");
+	//tmpcanvas.style.width = w ;
 	//tmpcanvas.style.height = h ;
 }
 setstyles()
