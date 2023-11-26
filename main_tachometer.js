@@ -121,6 +121,7 @@ resize(w,h)
 	tmpinfo.style.width = w ;
 	const tmpcanvas = this._shadowRoot.getElementById("Tachometer");
 	tmpcanvas.style.width = w-60 ;
+	tmpcanvas.style.height = h-100 ;
 }
 setstyles()
 {
