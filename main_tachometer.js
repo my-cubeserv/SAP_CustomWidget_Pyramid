@@ -111,12 +111,12 @@ onCustomWidgetResize() {
 resize(w,h)
 {
 	const tmcard= this._shadowRoot.getElementById("chartcard");
-	tmcard.style.width = w;	
-	tmcard.style.height = h;
+	tmcard.style.width = w +20;	
+	tmcard.style.height = h + 20;
 	const tmtitle = this._shadowRoot.getElementById("title");
 	tmtitle.style.width = w;
 	const tmpbox = this._shadowRoot.getElementById("chartbox");
-	tmpbox.style.width = w - 50;
+	tmpbox.style.width = w;
 	const tmpinfo = this._shadowRoot.getElementById("DataInfo");
 	tmpinfo.style.width = w ;
 	const tmpcanvas = this._shadowRoot.getElementById("Tachometer");
