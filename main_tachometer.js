@@ -281,7 +281,7 @@ setstyles()
 	{
 		currdiv2.textContent= "50%" ;
 		currdiv2.style.top = (boxheight/4 - 20) + "px";
-		currdiv2.style.left = (boxwidth/2) + "px" ;
+		currdiv2.style.left =  "0px" ;
 		currdiv2.style.width ="100%";
 	}
 	const currdiv3 =  this._shadowRoot.getElementById("DataLablesRight");
