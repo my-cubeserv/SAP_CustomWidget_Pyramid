@@ -102,6 +102,7 @@ onCustomWidgetResize() {
 	this.resize(this.width,this.height);
 	this.style.display = "block";
 	this.render();	
+	location.reload();
 	//this.setstyles( );
 	
 }
