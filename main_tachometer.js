@@ -96,7 +96,7 @@ onCustomWidgetResize() {
         this._needsRedraw = true;
 	this.resize(this.width,this.height);
 	this.render();	
-	this.setstyles( );
+	//this.setstyles( );
 	
 }
 resize(w,h)
