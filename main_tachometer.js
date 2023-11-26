@@ -95,8 +95,9 @@ constructor() {
 		   bgcolor5: "#E035d3",
 		   bgcolor6: "#E08135"
 		};	
-	this.render();	
+	//this.render();	
 	} 
+	
 	get selection() {
           //  const result = { ...this._selection, ...(this._selection || {}).measures_0 };
           //  return Object.values(result).length > 0 ? result : undefined;
@@ -118,23 +119,25 @@ constructor() {
 					}
 			}));
 	}
+	
 	//When the widget is added to the html DOM of the page
 	connectedCallback() {
    		this._firstConnection = true;
-		this.render();
-		this.setstyles();
+		this.redraw();
+		//this.render();
+		//this.setstyles();
   	}
 
 	//When the widget is removed from the html DOM of the page
 	disconnectedCallback() {
    this._connected = false;
   }
-  	 //When the custom widget is updated
-	onCustomWidgetBeforeUpdate(oChangedProperties) {
+  //When the custom widget is updated
+ onCustomWidgetBeforeUpdate(oChangedProperties) {
 		this._props = { ...this._props, ...oChangedProperties };
 	}
-	  //When the custom widget is updated
-	onCustomWidgetAfterUpdate(oChangedProperties) {
+ //When the custom widget is updated
+ onCustomWidgetAfterUpdate(oChangedProperties) {
 		this._needsRedraw = true;
 		this._selection = {};
 		if (oChangedProperties.myDataSource && !this._props.designMode) {
@@ -171,8 +174,8 @@ constructor() {
 	
 	 redraw() {
 		if (!this._shadowRoot) { return; }
-	   this._shadowRoot.textContent = "";
-	   // check the result state (could be "loading", "success" or "error")
+	        this._shadowRoot.textContent = "";
+	        // check the result state (could be "loading", "success" or "error")
 		const myDataSource = this._props.myDataSource;
 		if (myDataSource)
 		{
@@ -182,11 +185,8 @@ constructor() {
 					return;
 				}
 				case "error": {
-					if (myDataSource.messages.length) {
-						this._shadowRoot.innerHTML = "<h1>Could not render chart</h1>" + (myDataSource.messages || []).map(m => `<b>${m.level}</b>: ${m.message}`).join("br");
-					} else {
-						// in case of no data an appropriate message will be show
-						this._shadowRoot.innerHTML = "<h1>No data</h1>";
+					this.render();	
+					this.setstyles( );
 					}
 					return;
 				} case "success": {
@@ -199,12 +199,12 @@ constructor() {
 	redrawChart() {            
 		// indicate result state: "error" and an appropriate message
 		const myDataSource = this._props.myDataSource;
-		/*if (!myDataSource.data.length
+		if (!myDataSource.data.length
 			|| Object.keys(myDataSource.metadata.dimensions).length === 0
 			|| Object.keys(myDataSource.metadata.mainStructureMembers).length === 0) {
 			this._shadowRoot.innerHTML = "<h1>No data</h1>";
 			return;
-		}*/
+		}
 		this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
 		
 		const data = myDataSource.data;
