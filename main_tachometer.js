@@ -101,9 +101,9 @@ onCustomWidgetResize() {
 	this.width = this._shadowRoot.host.offsetWidth;
         this.height = this._shadowRoot.host.offsetHeight;
         this._needsRedraw = true;
+	this.resize(this.width,this.height);
 	this.style.height = "100%";
 	this.style.display = "block";
-	this.resize(this.width,this.height);
 	this.render();	
 	this.setstyles( );
 	
@@ -120,8 +120,8 @@ resize(w,h)
 	const tmpinfo = this._shadowRoot.getElementById("DataInfo");
 	tmpinfo.style.width = w ;
 	const tmpcanvas = this._shadowRoot.getElementById("Tachometer");
-	tmpcanvas.style.width = w-60 ;
-	tmpcanvas.style.height = h-100 ;
+	tmpcanvas.style.width = w ;
+	tmpcanvas.style.height = h ;
 }
 setstyles()
 {
