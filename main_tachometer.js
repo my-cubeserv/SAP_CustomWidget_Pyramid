@@ -61,9 +61,8 @@ tmpl.innerHTML = `
 	width: 100%;
 	  }
    .canvas {
-   	width: 90%;
+   	width: 100%;
         background: #9FFCFD;
-	height:90% ;
    }
     </style>
      <div class="chartCard" id="chartcard">
@@ -111,8 +110,8 @@ onCustomWidgetResize() {
 resize(w,h)
 {
 	const tmcard= this._shadowRoot.getElementById("chartcard");
-	tmcard.style.width = w +20;	
-	tmcard.style.height = h + 20;
+	tmcard.style.width = w;	
+	tmcard.style.height = h;
 	const tmtitle = this._shadowRoot.getElementById("title");
 	tmtitle.style.width = w;
 	const tmpbox = this._shadowRoot.getElementById("chartbox");
@@ -121,7 +120,7 @@ resize(w,h)
 	tmpinfo.style.width = w ;
 	const tmpcanvas = this._shadowRoot.getElementById("Tachometer");
 	tmpcanvas.style.width = w ;
-	tmpcanvas.style.height = h ;
+	//tmpcanvas.style.height = h ;
 }
 setstyles()
 {
