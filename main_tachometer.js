@@ -266,6 +266,8 @@ resize(w,h)
 }
 setstyles()
 {
+	boxwidth = this._shadowRoot.host.offsetWidth;
+        boxheight = this._shadowRoot.host.offsetHeight;
 	//  set data labels
 	const currdiv =  this._shadowRoot.getElementById("DataLablesLeft");
 	if(currdiv)
