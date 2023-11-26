@@ -66,7 +66,7 @@ tmpl.innerHTML = `
    }
     </style>
      <div class="chartCard" id="chartcard">
-	<div class="Title" id="title">test</div>
+	<!--div class="Title" id="title">test</div-->
 	<div class="chartBox" id="chartbox">
 		<!--div id = "DataLablesLeft" class="labelleft" ></div>
 		<div id = "DataLablesTop" class="labeltop" ></div>
@@ -101,9 +101,8 @@ onCustomWidgetResize() {
         this.height = this._shadowRoot.host.offsetHeight;
         this._needsRedraw = true;
 	this.resize(this.width,this.height);
-	this.style.height = "100%";
 	this.style.display = "block";
-	this.render();	
+	//this.render();	
 	//this.setstyles( );
 	
 }
