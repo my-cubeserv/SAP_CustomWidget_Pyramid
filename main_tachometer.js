@@ -44,6 +44,8 @@ tmpl.innerHTML = `
    	 text-align: center;
      	  width: 100%;
 	  background: orange;
+          margin:0px;
+	  padding: 0px;
 		}	
 	  .labelright {
 	  position: absolute;
