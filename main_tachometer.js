@@ -333,9 +333,12 @@ const label = ['10%', '20%', '30%', '40%'];
 	const borderradus = 5;
 	const borderwith = 1;
 	const datavalue = 0;
-	if (ndata.length > 0)
+	if (ndata)
 	{
-		datavalue = ndata[1];
+		if( ndata.length > 0)
+		{
+			datavalue = ndata[1];
+		}
 	}
 		const data = {
       labels: label,  // legend
