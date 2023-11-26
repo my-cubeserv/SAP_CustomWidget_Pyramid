@@ -27,7 +27,7 @@ tmpl.innerHTML = `
 		padding-top: 0px;	
 		margin-top:0px;		
       }
-	  .Title {
+/*	  .Title {
 		text-align: center;
 		background: orange;
 		position: absolute;
@@ -59,7 +59,7 @@ tmpl.innerHTML = `
 	font-size:12px;	
 	text-align: center;	
 	width: 100%;
-	  }
+	  } */
    .canvas {
    	width: 100%;
         background: #9FFCFD;
@@ -68,10 +68,10 @@ tmpl.innerHTML = `
      <div class="chartCard" id="chartcard">
 	<div class="Title" id="title">test</div>
 	<div class="chartBox" id="chartbox">
-		<div id = "DataLablesLeft" class="labelleft" ></div>
+		<!--div id = "DataLablesLeft" class="labelleft" ></div>
 		<div id = "DataLablesTop" class="labeltop" ></div>
 		<div id = "DataLablesRight" class="labelright" ></div>	
-		<div id = "DataInfo" class="datainfo"></div>	
+		<div id = "DataInfo" class="datainfo"></div-->	
 		<canvas id="Tachometer" class="canvas"></canvas>			
 	</div>
     </div>
@@ -89,7 +89,7 @@ constructor() {
 	connectedCallback() {
    		this._firstConnection = true;
 		this.render();
-		this.setstyles();
+		//this.setstyles();
   	}
 
 		disconnectedCallback() {
@@ -104,7 +104,7 @@ onCustomWidgetResize() {
 	this.style.height = "100%";
 	this.style.display = "block";
 	this.render();	
-	this.setstyles( );
+	//this.setstyles( );
 	
 }
 resize(w,h)
@@ -112,12 +112,13 @@ resize(w,h)
 	const tmcard= this._shadowRoot.getElementById("chartcard");
 	tmcard.style.width = w;	
 	tmcard.style.height = h;
-	const tmtitle = this._shadowRoot.getElementById("title");
-	tmtitle.style.width = w;
+	
 	const tmpbox = this._shadowRoot.getElementById("chartbox");
 	tmpbox.style.width = w;
+	/*const tmtitle = this._shadowRoot.getElementById("title");
+	tmtitle.style.width = w;
 	const tmpinfo = this._shadowRoot.getElementById("DataInfo");
-	tmpinfo.style.width = w ;
+	tmpinfo.style.width = w ;*/
 	const tmpcanvas = this._shadowRoot.getElementById("Tachometer");
 	tmpcanvas.style.width = w ;
 	//tmpcanvas.style.height = h ;
