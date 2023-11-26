@@ -60,6 +60,11 @@ tmpl.innerHTML = `
 	text-align: center;	
 	width: 100%;
 	  }
+   .canvas {
+   	width: 90%;
+        background: #9FFCFD;
+	height:90% ;
+   }
     </style>
      <div class="chartCard" id="chartcard">
 	<div class="Title" id="title">test</div>
@@ -68,7 +73,7 @@ tmpl.innerHTML = `
 		<div id = "DataLablesTop" class="labeltop" ></div>
 		<div id = "DataLablesRight" class="labelright" ></div>	
 		<div id = "DataInfo" class="datainfo"></div>	
-		<canvas id="Tachometer" ></canvas>			
+		<canvas id="Tachometer" class="canvas"></canvas>			
 	</div>
     </div>
 `;
