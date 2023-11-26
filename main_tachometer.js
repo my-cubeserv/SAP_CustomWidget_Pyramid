@@ -119,7 +119,7 @@ const currdiv3 =  this._shadowRoot.getElementById("DataLablesRight");
 currdiv3.textContent= "100%" ;
 const currdiv4 =  this._shadowRoot.getElementById("DataInfo");
 //currdiv4.textContent= "1200" + " | " + "300" ;
-currdiv4.textContent= this._shadowRoot.host.offsetWidth" + " | " + "this._shadowRoot.host.offsetHeight" ;
+currdiv4.textContent= this._shadowRoot.host.offsetWidth + " | " + this._shadowRoot.host.offsetHeight ;
 
 var box = this._shadowRoot.getElementById("chartbox");
 
