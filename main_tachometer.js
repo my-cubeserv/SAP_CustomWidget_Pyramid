@@ -61,7 +61,7 @@ tmpl.innerHTML = `
 		<div id = "DataLablesLeft" class="labelleft" ></div>
 		<div id = "DataLablesTop" class="labeltop" ></div>
 		<div id = "DataLablesRight" class="labelright" ></div>	
-		<div id = "DataInfo" class="datainfo" id="datainfo"></div>	
+		<div id = "DataInfo" class="datainfo"></div>	
 		<canvas id="Tachometer" ></canvas>			
 	</div>
     </div>
@@ -104,7 +104,7 @@ resize(w,h)
 	tmtitle.style.width = w;
 	const tmpbox = this._shadowRoot.getElementById("chartbox");
 	tmcard.style.width = w - 50;
-	const tmpinfo = this._shadowRoot.getElementById("datainfo");
+	const tmpinfo = this._shadowRoot.getElementById("DataInfo");
 	tmpinfo.style.width = w ;
 }
 setstyles()
