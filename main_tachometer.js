@@ -186,8 +186,7 @@ constructor() {
 				}
 				case "error": {
 					this.render();	
-					//this.setstyles();
-					}
+					//this.setstyles();					
 					return;
 				} case "success": {
 					this.redrawChart();
