@@ -124,7 +124,7 @@ constructor() {
    		this._firstConnection = true;
 		//this.redraw();
 		this.render();
-		this.setstyles();
+		//this.setstyles();
   	}
 
 	//When the widget is removed from the html DOM of the page
@@ -242,7 +242,7 @@ onCustomWidgetResize() {
         this._needsRedraw = true;
 	this.resize(this.width,this.height);
 	this.redraw();
-	this.setstyles( );
+	//this.setstyles( );
 	
 }
 resize(w,h)
