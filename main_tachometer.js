@@ -123,8 +123,8 @@ constructor() {
 	//When the widget is added to the html DOM of the page
 	connectedCallback() {
    		this._firstConnection = true;
-		this.redraw();
-		//this.render();
+		//this.redraw();
+		this.render();
 		//this.setstyles();
   	}
 
@@ -227,12 +227,12 @@ constructor() {
 		let alldata = [];
 		
 		ndata.forEach(function (item) {
-			if(item.dimensions_0 && item.measures_0)
+			if( item.measures_0)
 			{
-				alldata.push([item.measures_0.raw, item.dimensions_0.id ]);
+				alldata.push([item.measures_0.raw ]);
 			}					
 		 });
-		 alldata.sort(function(a, b){return b[0] - a[0]});			
+		 alldata.sort(function(a){return a[0]});			
 		return 	alldata;
 	}
 	
