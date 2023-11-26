@@ -9,7 +9,7 @@ tmpl.innerHTML = `
 		border-color: black;
 		margin-bottom:0px;
 		padding-bottom: 0px;
-		//background: #F58EFF;
+		background: #F58EFF;
 		padding-top: 0px;	
 		margin-top:0px;	
       }
@@ -19,7 +19,7 @@ tmpl.innerHTML = `
 		padding-left: 30px;	
 		padding-right: 20px;	
 		position: relative;
-		//background: green;	
+		background: green;	
 	    margin-bottom:0px;
 	    padding-bottom: 0px;
 		padding-top: 0px;	
@@ -27,7 +27,7 @@ tmpl.innerHTML = `
       }
 	  .Title {
 		text-align: center;
-		//background: orange;
+		background: orange;
 		position: absolute;
 		top: 10px;
 		width: 90%;
@@ -103,7 +103,7 @@ resize(w,h)
 	const tmtitle = this._shadowRoot.getElementById("title");
 	tmtitle.style.width = w;
 	const tmpbox = this._shadowRoot.getElementById("chartbox");
-	tmcard.style.width = w - 50;
+	tmpbox.style.width = w - 50;
 	const tmpinfo = this._shadowRoot.getElementById("DataInfo");
 	tmpinfo.style.width = w ;
 }
