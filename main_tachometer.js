@@ -9,7 +9,8 @@ tmpl.innerHTML = `
 		border-color: black;
 		margin-bottom:0px;
 		padding-bottom: 0px;
-		background: #F58EFF;
+		//background: #F58EFF;
+  		background: transparent;
 		padding-top: 0px;	
 		margin-top:0px;	
       }
@@ -19,7 +20,8 @@ tmpl.innerHTML = `
 		padding-left: 30px;	
 		padding-right: 20px;	
 		position: relative;
-		//background: green;	
+		//background: green;
+  		background: transparent;
 	    margin-bottom:0px;
 	    padding-bottom: 0px;
 		padding-top: 0px;	
@@ -236,7 +238,8 @@ const label = ['10%', '20%', '30%', '40%'];
 		  options: {
 		  aspectRation: 1.8,
 			plugins:
-			{ legend: { display: false }			
+			{ legend: { display: false },		
+			 tooltip: {display: false}
 			}
 		  },
 		  plugins:[gaugeNeedle]
