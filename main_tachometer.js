@@ -90,7 +90,7 @@ onCustomWidgetResize() {
 	this.width = this._shadowRoot.host.offsetWidth;
         this.height = this._shadowRoot.host.offsetHeight;
         this._needsRedraw = true;
-	resize(this.width,his.height );
+	resize(this.width, this.height);
 	this.render();	
 	this.setstyles( );
 	
