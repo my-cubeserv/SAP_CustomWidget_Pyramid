@@ -5,7 +5,7 @@ tmpl.innerHTML = `
  <style>
         .chartCard {
         width: 100%;
-		height: auto;
+	//	height: auto;
 		border-color: black;
 		margin-bottom:0px;
 		padding-bottom: 0px;
@@ -15,17 +15,16 @@ tmpl.innerHTML = `
 		margin-top:0px;	
       }
       .chartBox {
-        width: 90%;
-		height:auto;		
+        width: 100%;
+	//	height:auto;		
 		padding-left: 30px;	
 		padding-right: 20px;	
 		position: relative;
 		//background: green;
   		background: transparent;
-	    margin-bottom:0px;
+	    margin:0px;
 	    padding-bottom: 0px;
-		padding-top: 0px;	
-		margin-top:0px;		
+	    padding-top: 0px;
       }
 /*	  .Title {
 		text-align: center;
@@ -60,10 +59,10 @@ tmpl.innerHTML = `
 	text-align: center;	
 	width: 100%;
 	  } */
-   .canvas {
+   /*.canvas {
    	width: 100%;
         background: #9FFCFD;
-   }
+   }*/
     </style>
      <div class="chartCard" id="chartcard">
 	<!--div class="Title" id="title">test</div-->
