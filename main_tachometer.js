@@ -250,47 +250,56 @@ onCustomWidgetResize() {
 resize(w,h)
 {
 	const tmcard= this._shadowRoot.getElementById("chartcard");
-	tmcard.style.width = w;	
-	//tmcard.style.height = h;
-	
-	//const tmpbox = this._shadowRoot.getElementById("chartbox");
-	//tmpbox.style.width = w;
-	/*const tmtitle = this._shadowRoot.getElementById("title");
-	tmtitle.style.width = w;
-	const tmpinfo = this._shadowRoot.getElementById("DataInfo");
-	tmpinfo.style.width = w ;*/
-	//const tmpcanvas = this._shadowRoot.getElementById("Tachometer");
-	//tmpcanvas.style.width = w ;
-	//tmpcanvas.style.height = h ;
+	if(tmcard)
+	{
+		tmcard.style.width = w;	
+		//tmcard.style.height = h;
+		
+		//const tmpbox = this._shadowRoot.getElementById("chartbox");
+		//tmpbox.style.width = w;
+		/*const tmtitle = this._shadowRoot.getElementById("title");
+		tmtitle.style.width = w;
+		const tmpinfo = this._shadowRoot.getElementById("DataInfo");
+		tmpinfo.style.width = w ;*/
+		//const tmpcanvas = this._shadowRoot.getElementById("Tachometer");
+		//tmpcanvas.style.width = w ;
+		//tmpcanvas.style.height = h ;
+	}
 }
 setstyles()
 {
-//  set data labels
-const currdiv =  this._shadowRoot.getElementById("DataLablesLeft");
+	//  set data labels
+	const currdiv =  this._shadowRoot.getElementById("DataLablesLeft");
+	if(currdiv)
+	{
+		currdiv.textContent= "0%" ;
+		currdiv.style.top =  (boxheight-boxheight/3 +10) + "px";
+		currdiv.style.width ="100%";
+	}
+	const currdiv2 =  this._shadowRoot.getElementById("DataLablesTop");
+	if(currdiv2)
+	{
+		currdiv2.textContent= "50%" ;
+		currdiv2.style.top = (boxheight/4 - 20) + "px";
+		currdiv2.style.left = (boxwidth/2) + "px" ;
+		currdiv2.style.width ="100%";
+	}
+	const currdiv3 =  this._shadowRoot.getElementById("DataLablesRight");
+	if(currdiv3)
+	{
+		currdiv3.textContent= "100%" ;
+		currdiv3.style.top = (boxheight-boxheight/3 +10) + "px";
+		currdiv3.style.left = (boxwidth -40) + "px";
+		currdiv3.style.width ="100%";
+	}
+	const currdiv4 =  this._shadowRoot.getElementById("DataInfo");
+	If(currdiv4)
+	{
+		//currdiv4.textContent= "1200" + " | " + "300" ;
+		currdiv4.textContent= this._shadowRoot.host.offsetWidth + " | " + this._shadowRoot.host.offsetHeight ;
+		currdiv4.style.top = (boxheight-boxheight/4.5 ) + "px";
+	}
 
-currdiv.textContent= "0%" ;
-const currdiv2 =  this._shadowRoot.getElementById("DataLablesTop");
-currdiv2.textContent= "50%" ;
-const currdiv3 =  this._shadowRoot.getElementById("DataLablesRight");
-currdiv3.textContent= "100%" ;
-const currdiv4 =  this._shadowRoot.getElementById("DataInfo");
-//currdiv4.textContent= "1200" + " | " + "300" ;
-currdiv4.textContent= this._shadowRoot.host.offsetWidth + " | " + this._shadowRoot.host.offsetHeight ;
-
-var box = this._shadowRoot.getElementById("chartbox");
-
-var boxwidth = box.offsetWidth;
-var boxheight = box.offsetHeight;
-
-currdiv.style.top =  (boxheight-boxheight/3 +10) + "px";
-currdiv.style.width ="100%";
-currdiv2.style.top = (boxheight/4 - 20) + "px";
-currdiv2.style.left = (boxwidth/2) + "px" ;
-currdiv2.style.width ="100%";
-currdiv3.style.top = (boxheight-boxheight/3 +10) + "px";
-currdiv3.style.left = (boxwidth -40) + "px";
-currdiv3.style.width ="100%";
-currdiv4.style.top = (boxheight-boxheight/4.5 ) + "px";
 }
 	
 //Draw tachometer
