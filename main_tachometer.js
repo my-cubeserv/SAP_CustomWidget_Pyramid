@@ -95,12 +95,12 @@ constructor() {
 		   bgcolor5: "#E035d3",
 		   bgcolor6: "#E08135"
 		};	
-	//this.render();	
+	this.render();	
 	} 
 	
 	get selection() {
-          //  const result = { ...this._selection, ...(this._selection || {}).measures_0 };
-          //  return Object.values(result).length > 0 ? result : undefined;
+            const result = { ...this._selection, ...(this._selection || {}).measures_0 };
+            return Object.values(result).length > 0 ? result : undefined;
         }
 	_submit(e) {
 			e.preventDefault();
