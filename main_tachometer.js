@@ -56,7 +56,7 @@ tmpl.innerHTML = `
 	  }
     </style>
      <div class="chartCard" id="chartcard">
-	<div class="Title">test</div>
+	<div class="Title" id="title">test</div>
 	<div class="chartBox" id="chartbox">
 		<div id = "DataLablesLeft" class="labelleft" ></div>
 		<div id = "DataLablesTop" class="labeltop" ></div>
@@ -99,6 +99,8 @@ resize(w,h)
 {
 	const tmcard= this._shadowRoot.getElementById("chartcard");
 	tmcard.style.width = w;	
+	const tmtitle = this._shadowRoot.getElementById("title");
+	tmtitle.style.width = w;	
 }
 setstyles()
 {
