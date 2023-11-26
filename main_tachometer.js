@@ -293,7 +293,7 @@ setstyles()
 		currdiv3.style.width ="100%";
 	}
 	const currdiv4 =  this._shadowRoot.getElementById("DataInfo");
-	If(currdiv4)
+	if(currdiv4)
 	{
 		//currdiv4.textContent= "1200" + " | " + "300" ;
 		currdiv4.textContent= this._shadowRoot.host.offsetWidth + " | " + this._shadowRoot.host.offsetHeight ;
