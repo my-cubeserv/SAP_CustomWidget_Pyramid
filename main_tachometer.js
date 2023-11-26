@@ -14,16 +14,16 @@ tmpl.innerHTML = `
 		margin-top:0px;	
       }
       .chartBox {
-        width: 100%;
-	//	height:auto;		
+       		 width: 100%;
+		//	height:auto;		
 		padding-left: 30px;	
-		padding-right: 20px;	
+		padding-right: 30px;	
 		position: relative;
 		//background: green;
-  		background: transparent;
-	    margin:0px;
-	    padding-bottom: 0px;
-	    padding-top: 0px;
+		background: transparent;
+		margin:0px;
+		padding-bottom: 0px;
+		padding-top: 0px;
       }
 	  .Title {
 		text-align: center;
@@ -241,10 +241,8 @@ onCustomWidgetResize() {
         this.height = this._shadowRoot.host.offsetHeight;
         this._needsRedraw = true;
 	this.resize(this.width,this.height);
-	this.style.display = "block";
 	this.redraw();
-	//this.render();	
-	//this.setstyles( );
+	this.setstyles( );
 	
 }
 resize(w,h)
