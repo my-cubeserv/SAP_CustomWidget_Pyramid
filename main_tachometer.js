@@ -90,8 +90,15 @@ onCustomWidgetResize() {
 	this.width = this._shadowRoot.host.offsetWidth;
         this.height = this._shadowRoot.host.offsetHeight;
         this._needsRedraw = true;
+	resize(this.width,his.height );
 	this.render();	
-	this.setstyles();
+	this.setstyles( );
+	
+}
+resize(w,h)
+{
+	const tmcard= this._shadowRoot.getElementById("chartcard");
+	tmcard.style.width = w;	
 }
 setstyles()
 {
