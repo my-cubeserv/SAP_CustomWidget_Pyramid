@@ -9,8 +9,8 @@ tmpl.innerHTML = `
 		border-color: black;
 		margin-bottom:0px;
 		padding-bottom: 0px;
-		//background: #F58EFF;
-  		background: transparent;
+		background: #F58EFF;
+  		//background: transparent;
 		padding-top: 0px;	
 		margin-top:0px;	
       }
@@ -58,7 +58,7 @@ tmpl.innerHTML = `
 	  position: absolute;
 	font-size:12px;	
 	text-align: center;	
-	width: 90%;
+	width: 100%;
 	  }
     </style>
      <div class="chartCard" id="chartcard">
@@ -239,7 +239,7 @@ const label = ['10%', '20%', '30%', '40%'];
 		  aspectRation: 1.8,
 			plugins:
 			{ legend: { display: false },		
-			 tooltip: {display: false}
+			 tooltip: {enabled: false}
 			}
 		  },
 		  plugins:[gaugeNeedle]
