@@ -4,7 +4,7 @@ tmpl.innerHTML = `
  <style>
         .chartCard {
         width: 100%;
-	//	height: auto;
+		height: 90%;
 		border-color: black;
 		margin-bottom:0px;
 		padding-bottom: 0px;
@@ -123,7 +123,7 @@ constructor() {
 	connectedCallback() {
    		this._firstConnection = true;
 		//this.redraw();
-		this.render();
+		//this.render();
 		//this.setstyles();
   	}
 
