@@ -192,7 +192,8 @@ const label = ['10%', '20%', '30%', '40%'];
 		cutot:'95%',
 		borderRadius: borderradus,
 		 needleValue: 0
-      }]
+      }],
+	hoverOffset: 1
     };
 	const gaugeNeedle ={
 		id: 'gaugeNeedle',
