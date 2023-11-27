@@ -362,12 +362,12 @@ const label = ['10%', '20%', '30%', '40%'];
 	var bis5 = this.bis5;
 	var bis6 = this.bis6;
 	const datas = [bis1, bis2, bis3, bis4, bis5, bis6];
-	var biscolor1 = this.this.bgcolor1;
-	var biscolor2 = this.this.bgcolor2;
-	var biscolor3 = this.this.bgcolor3;
-	var biscolor4 = this.this.bgcolor4;
-	var biscolor5 = this.this.bgcolor5;
-	var biscolor6 = this.this.bgcolor6;
+	var biscolor1 = this.bgcolor1;
+	var biscolor2 = this.bgcolor2;
+	var biscolor3 = this.bgcolor3;
+	var biscolor4 = this.bgcolor4;
+	var biscolor5 = this.bgcolor5;
+	var biscolor6 = this.bgcolor6;
 	const backgroundcolors = [
           biscolor1,
           biscolor2,
