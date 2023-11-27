@@ -372,19 +372,19 @@ function hex2rgba (hex , alpha ){
 
 const label = ['10%', '20%', '30%', '40%'];
 	var opasity = this.opasity;
-	var bis1 = hex2rgba(this.bis1 , opasity);
+	var bis1 = this.bis1;
 	var bis2 = this.bis2;
 	var bis3 = this.bis3;
 	var bis4 = this.bis4;
 	var bis5 = this.bis5;
 	var bis6 = this.bis6;
 	const datas = [bis1, bis2, bis3, bis4, bis5, bis6];
-	var biscolor1 = this.bgcolor1;
-	var biscolor2 = this.bgcolor2;
-	var biscolor3 = this.bgcolor3;
-	var biscolor4 = this.bgcolor4;
-	var biscolor5 = this.bgcolor5;
-	var biscolor6 = this.bgcolor6;
+	var biscolor1 = hex2rgba(this.bgcolor1 , opasity);
+	var biscolor2 = hex2rgba(this.bgcolor2 , opasity);
+	var biscolor3 = hex2rgba(this.bgcolor3 , opasity);
+	var biscolor4 = hex2rgba(this.bgcolor4 , opasity);
+	var biscolor5 = hex2rgba(this.bgcolor5 , opasity);
+	var biscolor6 = hex2rgba(this.bgcolor6 , opasity);
 	const backgroundcolors = [
           biscolor1,
           biscolor2,
