@@ -11,7 +11,6 @@
                 <td>Font size</td>\
                 <td><input id="ap_fontsize" type="number" name="fontSize" max="30" min="6"></td>\
             </tr>\
-			<tr>\
 	     <tr>\
                 <td>Opasity</td>\
                 <td><input id="ap_opasity" type="number" name="opasity" max="1" min="0"></td>\
