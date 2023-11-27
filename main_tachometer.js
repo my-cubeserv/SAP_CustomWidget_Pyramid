@@ -371,11 +371,12 @@ setstyles(ndata)
 		if (ndata)
 		{
 			if( ndata.length > 0)
-			{ 
+			{ alert( ndata.length);
 				tmvalue = ndata[0][0];
 				 if( ndata.length > 1)
 				 {
 				 tmvalue2 = ndata[1][0]; 
+					 
 				 }
 				currdiv4.textContent= tmvalue + " | " + tmvalue2;
 			}
