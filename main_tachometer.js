@@ -104,7 +104,7 @@ constructor() {
 		bis6: 100,
 		opasity: 1,
 		title: '',
-		bradius: '0'
+		bradius: 0
 		};	
 	} 
 	
