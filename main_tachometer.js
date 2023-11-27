@@ -103,7 +103,8 @@ constructor() {
 		bis5: 70,
 		bis6: 100,
 		opasity: 1,
-		title: ''
+		title: '',
+		bradius: '0'
 		};	
 	} 
 	
@@ -137,7 +138,8 @@ constructor() {
 							bis5: this.bis5,
 							bis6: this.bis6,
 							opasity: this.opasity,
-							title: this.title
+							title: this.title,
+							bradius: this.bradius
 						}
 					}
 			}));
@@ -233,6 +235,9 @@ constructor() {
 		}
 	 	if ("title" in oChangedProperties) {
 			this.title = oChangedProperties["title"];
+		}
+	 	if ("bradius" in oChangedProperties) {
+			this.title = oChangedProperties["bradius"];
 		}
 		this.redrawChart();
     }
@@ -419,7 +424,7 @@ const label = ['10%', '20%', '30%', '40%'];
           biscolor6,
           'rgba(0, 0, 0, 1)'
         ];
-	const borderradus = 5;
+	const borderradus = this.bradius;
 	const borderwith = 1;
 	var tmvalue = 0;
 	if (ndata)
