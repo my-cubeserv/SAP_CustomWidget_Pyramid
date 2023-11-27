@@ -11,7 +11,15 @@
                 <td>Font size</td>\
                 <td><input id="ap_fontsize" type="number" name="fontSize" max="30" min="6"></td>\
             </tr>\
-			<tr>\
+	     <tr>\
+                <td>Opasity</td>\
+                <td><input id="ap_opasity" type="number" name="opasity" max="1" min="0"></td>\
+            </tr>\
+	     <tr>\
+                <td>Border Radius</td>\
+                <td><input id="ap_bradius" type="number" name="bradius" max="20" min="0"></td>\
+            </tr>\
+	    <tr>\
                 <td>Background color 1</td>\
 	       <td><input id="ap_von1" type="number" name="von" max="100" min="0"></td>\
 	       <td><input id="ap_bis1" type="number" name="bis" max="100" min="0"></td>\
@@ -46,6 +54,10 @@
 	       <td><input id="ap_von6" type="number" name="von" max="100" min="0"></td>\
 	       <td><input id="ap_bis6" type="number" name="bis" max="100" min="0"></td>\
                 <td><input id="ap_bgcolor6" type="color" name="bgColor6"></td>\
+            </tr>\
+	    <tr>\
+                <td>Titel</td>\
+                <td><input id="ap_title" type="string" name="title"></td>\
             </tr>\
             </table>\
         </form>\
