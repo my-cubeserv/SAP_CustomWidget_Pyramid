@@ -308,8 +308,6 @@ onCustomWidgetResize() {
         this._needsRedraw = true;
 	this.resize(this.width,this.height);
 	this.redraw();
-	this.setstyles( );
-	
 }
 resize(w,h)
 {
