@@ -258,7 +258,6 @@ constructor() {
 					//this.setstyles();					
 					return;
 				} case "success": {
-					this.resize();
 					this.redrawChart();
 					return;
 				}
@@ -282,7 +281,10 @@ constructor() {
 		{
 			this.wData = this.parseData(JSON.parse(JSON.stringify(data)));
 		}
-		
+		this.width = this._shadowRoot.host.offsetWidth;
+		this.height = this._shadowRoot.host.offsetHeight;
+		this._needsRedraw = true;
+		this.resize(this.width,this.height);
 		this.render(this.wData);
 		this.setstyles(this.wData);
 	}
@@ -304,19 +306,19 @@ constructor() {
 	
 	//When the custom widget resized
 onCustomWidgetResize() {
-	/*this.width = this._shadowRoot.host.offsetWidth;
-        this.height = this._shadowRoot.host.offsetHeight;
-        this._needsRedraw = true;
-	this.resize(this.width,this.height);*/
-	this.resize();
-	this.redraw();
-}
-resize()
-{
 	this.width = this._shadowRoot.host.offsetWidth;
         this.height = this._shadowRoot.host.offsetHeight;
         this._needsRedraw = true;
 	this.resize(this.width,this.height);
+	this.redraw();
+}
+resize(w,h)
+{
+	const tmcard= this._shadowRoot.getElementById("chartcard");
+	if(tmcard)
+	{
+		tmcard.style.width = w;	
+	}
 }
 
 setstyles(ndata)
