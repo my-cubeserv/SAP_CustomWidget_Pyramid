@@ -132,7 +132,7 @@
             return false;
         }
 // function conver hex to rgb
- convercolor(hcolor, copasity) 
+/* convercolor(hcolor, copasity) 
 {
     var aRgbHex = hcolor.match(/.{1,2}/g);
     var aRgb = [
@@ -142,7 +142,7 @@
 	copasity
     ];
     return aRgb;
-}
+}*/
 //get value of properties
 		get color() {
 			return this._shadowRoot.getElementById("ap_textcolor").value;
@@ -207,7 +207,7 @@
 		get bis6() {
 			return this._shadowRoot.getElementById("ap_bis6").value;
 		}
-	   	 get opasity() {
+	   	get opasity() {
 			return this._shadowRoot.getElementById("ap_opasity").value;
 		}
 // set value of properties
