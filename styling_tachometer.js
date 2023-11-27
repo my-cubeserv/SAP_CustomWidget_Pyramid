@@ -211,7 +211,6 @@
 		}
 // set value of properties
         set color(v) {
-		var curropasity = get opasity();
             this._shadowRoot.getElementById("ap_textcolor").value = convercolor(v) ;
         }
         set value(v) {
