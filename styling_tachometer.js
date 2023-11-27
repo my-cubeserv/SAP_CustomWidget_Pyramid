@@ -6,6 +6,8 @@
 	     <tr>\
                 <td>Titel</td>\
                 <td><input id="ap_title" type="string" name="title"></td>\
+	           <td><></td>\
+	           <td><></td>\
             </tr>\
              <tr>\
                 <td>Text Color</td>\
@@ -19,6 +21,10 @@
 	     <tr>\
                 <td>Opasity</td>\
                 <td><input id="ap_opasity" type="number" name="opasity" max="1" min="0"></td>\
+            </tr>\
+	    <tr>\
+                <td>Border Radius</td>\
+                <td><input id="ap_bradius" type="number" name="bradius" max="20" min="0"></td>\
             </tr>\
 		<tr>\
                 <td>Background color 1</td>\
@@ -96,7 +102,8 @@
 				bis5: this.bis5,
 				bis6: this.bis6,
 				opasity: this.opasity,
-				title: this.title
+				title: this.title,
+				bradius: this.bradius
                             }
                         }
                     }));
@@ -131,7 +138,8 @@
 			bis5: this.bis5,
 			bis6: this.bis6,
 			opasity: this.opasity,
-			title: this.title
+			title: this.title,
+			bradius: this.bradius
                     }
                 }
             }));
@@ -208,6 +216,9 @@
 	   	get title() {
 			return this._shadowRoot.getElementById("ap_title").value;
 		}
+	   	get bradius() {
+			return this._shadowRoot.getElementById("ap_bradius").value;
+		}
 // set value of properties
         set color(v) {
             this._shadowRoot.getElementById("ap_textcolor").value = v ;
@@ -277,6 +288,9 @@
         }
 	set title(v) {
             this._shadowRoot.getElementById("ap_title").value = v;
+        }
+	set bradius(v) {
+            this._shadowRoot.getElementById("ap_bradius").value = v;
         }
     }
 
