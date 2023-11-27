@@ -102,7 +102,7 @@ constructor() {
 		bis4: 60,
 		bis5: 70,
 		bis6: 100,
-		opasity: 0.2
+		opasity: 1
 		};	
 	} 
 	
