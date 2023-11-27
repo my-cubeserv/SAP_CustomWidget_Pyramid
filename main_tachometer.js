@@ -102,7 +102,7 @@ constructor() {
 		bis4: 60,
 		bis5: 70,
 		bis6: 100,
-		coloropasity: 0.2
+		opasity: 0.2
 		};	
 	} 
 	
@@ -135,7 +135,7 @@ constructor() {
 							bis4: this.bis4,
 							bis5: this.bis5,
 							bis6: this.bis6,
-							coloropasity: this.opasity
+							opasity: this.opasity
 						}
 					}
 			}));
@@ -226,7 +226,7 @@ constructor() {
 	 	if ("bis6" in oChangedProperties) {
 			this.bis6 = oChangedProperties["bis6"];
 		}
-	 	if ("coloropasity" in oChangedProperties) {
+	 	if ("opasity" in oChangedProperties) {
 			this.opasity = oChangedProperties["opasity"];
 		}
 		this.redrawChart();
