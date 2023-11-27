@@ -91,7 +91,7 @@
 				bis4: this.bis4,
 				bis5: this.bis5,
 				bis6: this.bis6,
-				coloropasity: this.opasity
+				opasity: this.opasity
                             }
                         }
                     }));
