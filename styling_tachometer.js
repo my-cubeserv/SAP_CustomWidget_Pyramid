@@ -131,17 +131,7 @@
             }));
             return false;
         }
-// function conver hex to rgb
- convercolor(hcolor) 
-{
-    var aRgbHex = hcolor.match(/.{1,2}/g);
-    var aRgb = [
-        parseInt(aRgbHex[0], 16),
-        parseInt(aRgbHex[1], 16),
-        parseInt(aRgbHex[2], 16)	
-    ];
-    return aRgb;
-}
+
 //get value of properties
 		get color() {
 			return this._shadowRoot.getElementById("ap_textcolor").value;
@@ -211,7 +201,7 @@
 		}
 // set value of properties
         set color(v) {
-            this._shadowRoot.getElementById("ap_textcolor").value = convercolor(v) ;
+            this._shadowRoot.getElementById("ap_textcolor").value = v ;
         }
         set value(v) {
             this._shadowRoot.getElementById("ap_selectedTop").value = v;
