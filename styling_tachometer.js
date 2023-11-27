@@ -58,6 +58,7 @@
 	    <tr>\
                 <td>Titel</td>\
                 <td><input id="ap_title" type="string" name="title"></td>\
+	        <td></td>\
             </tr>\
             </table>\
         </form>\
