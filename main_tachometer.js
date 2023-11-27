@@ -148,9 +148,7 @@ constructor() {
 	//When the widget is added to the html DOM of the page
 	connectedCallback() {
    		this._firstConnection = true;
-		//this.redraw();
-		//this.render();
-		//this.setstyles();
+		this.redraw();
   	}
 
 	//When the widget is removed from the html DOM of the page
@@ -160,6 +158,7 @@ constructor() {
   //When the custom widget is updated
  onCustomWidgetBeforeUpdate(oChangedProperties) {
 		this._props = { ...this._props, ...oChangedProperties };
+	 this.redraw();
 	}
  //When the custom widget is updated
  onCustomWidgetAfterUpdate(oChangedProperties) {
