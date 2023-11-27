@@ -64,7 +64,7 @@ tmpl.innerHTML = `
 		<canvas id="Tachometer" class="canvas"></canvas>			
 	</div>
     </div>
-    <div class="Title" id="title">test</div>
+    <div class="Title" id="title"></div>
 <div id = "DataLablesLeft" class="labelleft" ></div>
 <div id = "DataLablesTop" class="labeltop" ></div>
 <div id = "DataLablesRight" class="labelright" ></div>	
@@ -102,7 +102,8 @@ constructor() {
 		bis4: 60,
 		bis5: 70,
 		bis6: 100,
-		opasity: 1
+		opasity: 1,
+		title: ''
 		};	
 	} 
 	
@@ -135,7 +136,8 @@ constructor() {
 							bis4: this.bis4,
 							bis5: this.bis5,
 							bis6: this.bis6,
-							opasity: this.opasity
+							opasity: this.opasity,
+							title: this.title
 						}
 					}
 			}));
@@ -229,6 +231,9 @@ constructor() {
 	 	if ("opasity" in oChangedProperties) {
 			this.opasity = oChangedProperties["opasity"];
 		}
+	 	if ("title" in oChangedProperties) {
+			this.title = oChangedProperties["title"];
+		}
 		this.redrawChart();
     }
 	
@@ -319,6 +324,12 @@ setstyles()
 {
 	var boxwidth = this._shadowRoot.host.offsetWidth;
         var boxheight = this._shadowRoot.host.offsetHeight;
+	//set title 
+	const currtitle =  this._shadowRoot.getElementById("title");
+	if (currtitle)
+	{
+		currdiv.textContent= this.title ;
+	}
 	//  set data labels
 	const currdiv =  this._shadowRoot.getElementById("DataLablesLeft");
 	if(currdiv)
