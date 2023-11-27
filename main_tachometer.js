@@ -356,7 +356,7 @@ setstyles()
 		currdiv3.style.top = (boxheight-boxheight/3 +10) + "px";
 		currdiv3.style.left = (boxwidth -40) + "px";
 		currdiv3.style.width ="100%";
-		currdi3.style.fontSize = this.fontsize + "px";;
+		currdiv3.style.fontSize = this.fontsize + "px";;
 	}
 	const currdiv4 =  this._shadowRoot.getElementById("DataInfo");
 	if(currdiv4)
