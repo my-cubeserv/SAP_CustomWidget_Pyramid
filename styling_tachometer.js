@@ -3,6 +3,10 @@
     tmpl.innerHTML = '\
         <form id="form">\
             <table style="width: 100%;">\
+	     <tr>\
+                <td>Titel</td>\
+                <td><input id="ap_title" type="color" name="title"></td>\
+            </tr>\
              <tr>\
                 <td>Text Color</td>\
                 <td><input id="ap_textcolor" type="color" name="textColor"></td>\
@@ -91,7 +95,8 @@
 				bis4: this.bis4,
 				bis5: this.bis5,
 				bis6: this.bis6,
-				opasity: this.opasity
+				opasity: this.opasity,
+				title: this.title
                             }
                         }
                     }));
@@ -125,7 +130,8 @@
 			bis4: this.bis4,
 			bis5: this.bis5,
 			bis6: this.bis6,
-			opasity: this.opasity
+			opasity: this.opasity,
+			title: this.title
                     }
                 }
             }));
@@ -199,6 +205,9 @@
 	   	get opasity() {
 			return this._shadowRoot.getElementById("ap_opasity").value;
 		}
+	   	get title() {
+			return this._shadowRoot.getElementById("ap_title").value;
+		}
 // set value of properties
         set color(v) {
             this._shadowRoot.getElementById("ap_textcolor").value = v ;
@@ -265,6 +274,9 @@
         }
 	set opasity(v) {
             this._shadowRoot.getElementById("ap_opasity").value = v;
+        }
+	set title(v) {
+            this._shadowRoot.getElementById("ap_title").value = v;
         }
     }
 
