@@ -125,7 +125,7 @@
 			bis4: this.bis4,
 			bis5: this.bis5,
 			bis6: this.bis6,
-			coloropasity: this.opasity
+			opasity: this.opasity
                     }
                 }
             }));
@@ -207,7 +207,7 @@
 		get bis6() {
 			return this._shadowRoot.getElementById("ap_bis6").value;
 		}
-	   	 get coloropasity() {
+	   	 get opasity() {
 			return this._shadowRoot.getElementById("ap_opasity").value;
 		}
 // set value of properties
@@ -274,7 +274,7 @@
 	    set bis6(v) {
             this._shadowRoot.getElementById("ap_bis6").value = v;
         }
-	set coloropasity(v) {
+	set opasity(v) {
             this._shadowRoot.getElementById("ap_opasity").value = v;
         }
     }
