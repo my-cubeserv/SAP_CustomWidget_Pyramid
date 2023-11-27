@@ -11,7 +11,7 @@
                 <td>Font size</td>\
                 <td><input id="ap_fontsize" type="number" name="fontSize" max="30" min="6"></td>\
             </tr>\
-	     <tr>\
+	    <tr>\
                 <td>Opasity</td>\
                 <td><input id="ap_opasity" type="number" name="opasity" max="1" min="0"></td>\
             </tr>\
@@ -19,45 +19,41 @@
                 <td>Border Radius</td>\
                 <td><input id="ap_bradius" type="number" name="bradius" max="20" min="0"></td>\
             </tr>\
-		<tr>\
-                <td>Background color 1</td>\
+	    <tr>\
+        	<td>Background color 1</td>\
 	       <td><input id="ap_von1" type="number" name="von" max="100" min="0"></td>\
 	       <td><input id="ap_bis1" type="number" name="bis" max="100" min="0"></td>\
                 <td><input id="ap_bgcolor1" type="color" name="bgColor1"></td>\
             </tr>\
-			<tr>\
+	    <tr>\
                 <td>Background color 2</td>\
 	    	<td><input id="ap_von2" type="number" name="von" max="100" min="0"></td>\
 	      	<td><input id="ap_bis2" type="number" name="bis" max="100" min="0"></td>\
                 <td><input id="ap_bgcolor2" type="color" name="bgColor2"></td>\
             </tr>\
-			<tr>\
+	    <tr>\
                 <td>Background color 3</td>\
 	   	<td><input id="ap_von3" type="number" name="von" max="100" min="0"></td>\
 	       <td><input id="ap_bis3" type="number" name="bis" max="100" min="0"></td>\
                 <td><input id="ap_bgcolor3" type="color" name="bgColor3"></td>\
             </tr>\
-			<tr>\
-                <td>Background color 4</td>\
-	      <td><input id="ap_von4" type="number" name="von" max="100" min="0"></td>\
+	    <tr>\
+	     <td>Background color 4</td>\
+	       <td><input id="ap_von4" type="number" name="von" max="100" min="0"></td>\
 	       <td><input id="ap_bis4" type="number" name="bis" max="100" min="0"></td>\
                 <td><input id="ap_bgcolor4" type="color" name="bgColor4"></td>\
             </tr>\
-			<tr>\
+	    <tr>\
                 <td>Background color 5</td>\
 	       <td><input id="ap_von5" type="number" name="von" max="100" min="0"></td>\
 	       <td><input id="ap_bis5" type="number" name="bis" max="100" min="0"></td>\
                 <td><input id="ap_bgcolor5" type="color" name="bgColor5"></td>\
             </tr>\
-			<tr>\
+	    <tr>\
                 <td>Background color 6</td>\
 	       <td><input id="ap_von6" type="number" name="von" max="100" min="0"></td>\
 	       <td><input id="ap_bis6" type="number" name="bis" max="100" min="0"></td>\
                 <td><input id="ap_bgcolor6" type="color" name="bgColor6"></td>\
-            </tr>\
-	     <tr>\
-                <td>Titel</td>\
-                <td><input id="ap_title" type="string" name="title"></td>\
             </tr>\
             </table>\
         </form>\
