@@ -2,13 +2,7 @@
     let tmpl = document.createElement('template');
     tmpl.innerHTML = '\
         <form id="form">\
-            <table style="width: 100%;">\
-	     <tr>\
-                <td>Titel</td>\
-                <td><input id="ap_title" type="string" name="title"></td>\
-	           <td><></td>\
-	           <td><></td>\
-            </tr>\
+            <table style="width: 100%;">\	    
              <tr>\
                 <td>Text Color</td>\
                 <td><input id="ap_textcolor" type="color" name="textColor"></td>\
@@ -61,6 +55,10 @@
 	       <td><input id="ap_von6" type="number" name="von" max="100" min="0"></td>\
 	       <td><input id="ap_bis6" type="number" name="bis" max="100" min="0"></td>\
                 <td><input id="ap_bgcolor6" type="color" name="bgColor6"></td>\
+            </tr>\
+	     <tr>\
+                <td>Titel</td>\
+                <td><input id="ap_title" type="string" name="title"></td>\
             </tr>\
             </table>\
         </form>\
