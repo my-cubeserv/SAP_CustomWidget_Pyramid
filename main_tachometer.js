@@ -370,11 +370,11 @@ const label = ['10%', '20%', '30%', '40%'];
 	var biscolor6 = this.this.bgcolor6;
 	const backgroundcolors = [
           biscolor1,
-          biscolor2',
-          biscolor3',
-          biscolor4',
-          biscolor5',
-          biscolor6',
+          biscolor2,
+          biscolor3,
+          biscolor4,
+          biscolor5,
+          biscolor6,
           'rgba(0, 0, 0, 0.2)'
         ];
 	const bordercolor = [
