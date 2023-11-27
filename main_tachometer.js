@@ -27,10 +27,10 @@ tmpl.innerHTML = `
       }
 	  .Title {
 		text-align: center;
-		background: orange;
+		//background: orange;
 		position: absolute;
 		top: 10px;
-		width: 90%;
+		width: 100%;
 		font-size:12px;
 	  }
 	  .labelleft {
@@ -43,7 +43,7 @@ tmpl.innerHTML = `
 	  font-size:12px;
    	 text-align: center;
      	  width: 100%;
-	  background: orange;
+	 // background: orange;
           margin:0px;
 	  padding: 0px;
 		}	
@@ -84,12 +84,12 @@ constructor() {
 		this.properties = {
 	       	color: "#000000",
 		fontsize: 20,
-		bgcolor1: "#F12712",
-		bgcolor2: "#22b326",
-		bgcolor3: "#2681c5",
-		bgcolor4: "#ECE859",
-		bgcolor5: "#E035d3",
-		bgcolor6: "#E08135",
+		bgcolor1: "#FF1A68",
+		bgcolor2: "#36A2EB",
+		bgcolor3: "#FFCE56",
+		bgcolor4: "#4BC0C0",
+		bgcolor5: "#9966FF",
+		bgcolor6: "#FF9F40",
 		von1: 0,
 		von2: 20,
 		von3: 40,
@@ -378,12 +378,12 @@ const label = ['10%', '20%', '30%', '40%'];
           'rgba(0, 0, 0, 0.2)'
         ];
 	const bordercolor = [
-          'rgba(255, 26, 104, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)',
+          biscolor1,
+          biscolor2,
+          biscolor3,
+          biscolor4,
+          biscolor5,
+          biscolor6,
           'rgba(0, 0, 0, 1)'
         ];
 	const borderradus = 5;
