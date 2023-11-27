@@ -86,14 +86,26 @@ constructor() {
 	this._firstConnection = false;
 	this.wData = [];
 		this.properties = {
-	       color: "#000000",
-	      	   fontsize: 20,
-		   bgcolor1: "#F12712",
-		   bgcolor2: "#22b326",
-		   bgcolor3: "#2681c5",
-		   bgcolor4: "#ECE859",
-		   bgcolor5: "#E035d3",
-		   bgcolor6: "#E08135"
+	       	color: "#000000",
+		fontsize: 20,
+		bgcolor1: "#F12712",
+		bgcolor2: "#22b326",
+		bgcolor3: "#2681c5",
+		bgcolor4: "#ECE859",
+		bgcolor5: "#E035d3",
+		bgcolor6: "#E08135",
+		von1: 0,
+		von2: 20,
+		von3: 40,
+		von4: 50,
+		von5: 60,
+		von6: 70,
+		bis1: 20,
+		bis2: 40,
+		bis3: 50,
+		bis4: 60,
+		bis5: 70,
+		bis6: 100
 		};	
 	} 
 	
@@ -113,7 +125,19 @@ constructor() {
 							bgcolor3: this.bgcolor3,
 							bgcolor4: this.bgcolor4,
 							bgcolor5: this.bgcolor5,
-							bgcolor6: this.bgcolor6
+							bgcolor6: this.bgcolor6,
+							von1: this.von1,
+							von2: this.von2,
+							von3: this.von3,
+							von4: this.von4,
+							von5: this.von5,
+							von6: this.von6,
+							bis1: this.bis1,
+							bis2: this.bis2,
+							bis3: this.bis3,
+							bis4: this.bis4,
+							bis5: this.bis5,
+							bis6: this.bis6
 						}
 					}
 			}));
@@ -168,6 +192,42 @@ constructor() {
 		if ("bgcolor6" in oChangedProperties) {
 			this.bgcolor6 = oChangedProperties["bgcolor6"];
 		} 
+		if ("von1" in oChangedProperties) {
+			this.von1 = oChangedProperties["von1"];
+		} 
+		if ("von2" in oChangedProperties) {
+			this.von2 = oChangedProperties["von2"];
+		}
+		if ("von3" in oChangedProperties) {
+			this.von3 = oChangedProperties["von3"];
+		}
+		if ("von4" in oChangedProperties) {
+			this.von4 = oChangedProperties["von4"];
+		}
+		 if ("von5" in oChangedProperties) {
+			this.von5 = oChangedProperties["von5"];
+		}
+		 if ("von6" in oChangedProperties) {
+			this.von6 = oChangedProperties["von6"];
+		}
+	 	if ("bis1" in oChangedProperties) {
+			this.bis1 = oChangedProperties["bis1"];
+		}
+	 	if ("bis2" in oChangedProperties) {
+			this.bis2 = oChangedProperties["bis2"];
+		}
+	 	if ("bis3" in oChangedProperties) {
+			this.bis3 = oChangedProperties["bis3"];
+		}
+	 	if ("bis4" in oChangedProperties) {
+			this.bis4 = oChangedProperties["bis4"];
+		}
+	 	if ("bis5" in oChangedProperties) {
+			this.bis5 = oChangedProperties["bis5"];
+		}
+	 	if ("bis6" in oChangedProperties) {
+			this.bis6 = oChangedProperties["bis6"];
+		}
 		this.redrawChart();
     }
 	
