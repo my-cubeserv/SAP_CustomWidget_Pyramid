@@ -5,7 +5,7 @@
             <table style="width: 100%;">\
 	     <tr>\
                 <td>Titel</td>\
-                <td><input id="ap_title" type="color" name="title"></td>\
+                <td><input id="ap_title" type="string" name="title"></td>\
             </tr>\
              <tr>\
                 <td>Text Color</td>\
