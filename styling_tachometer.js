@@ -57,8 +57,7 @@
             </tr>\
 	    <tr>\
                 <td>Titel</td>\
-                <td><input id="ap_title" type="string" name="title"></td>\
-	        <td></td>\
+                <td rowspan="3"><input id="ap_title" type="string" name="title"></td>\
             </tr>\
             </table>\
         </form>\
