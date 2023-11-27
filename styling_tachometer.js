@@ -2,8 +2,8 @@
     let tmpl = document.createElement('template');
     tmpl.innerHTML = '\
         <form id="form">\
-        <table style="width: 100%;">\	
-	    <tr>\
+            <table style="width: 100%;">\
+             <tr>\
                 <td>Text Color</td>\
                 <td><input id="ap_textcolor" type="color" name="textColor"></td>\
             </tr>\
@@ -12,7 +12,7 @@
                 <td><input id="ap_fontsize" type="number" name="fontSize" max="30" min="6"></td>\
             </tr>\
 
-        </table>\
+            </table>\
         </form>\
     ';
 
