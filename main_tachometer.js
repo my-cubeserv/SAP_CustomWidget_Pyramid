@@ -371,9 +371,10 @@ setstyles(ndata)
 		if (ndata)
 		{
 			if( ndata.length > 0)
-			{ tmvalue = ndata[0];}	
+			{ tmvalue = ndata[0];
+			tmvalue2 = ndata[1]; }	
 		}
-		currdiv4.textContent= tmvalue + " | " + this._shadowRoot.host.offsetHeight ;
+		currdiv4.textContent= tmvalue + " | " + tmvalue2;
 		currdiv4.style.top = (boxheight-boxheight/4.5 ) + "px";
 		currdiv4.style.fontSize = this.fontsize + "px";
 		currdiv4.style.color = this.color;
