@@ -329,6 +329,7 @@ setstyles()
 	if (currtitle)
 	{
 		currtitle.textContent= this.title ;
+		currtitle.style.fontSize = this.fontsize + "px";;
 	}
 	//  set data labels
 	const currdiv =  this._shadowRoot.getElementById("DataLablesLeft");
@@ -337,6 +338,7 @@ setstyles()
 		currdiv.textContent= "0%" ;
 		currdiv.style.top =  (boxheight-boxheight/3 +10) + "px";
 		currdiv.style.width ="100%";
+		currdiv.style.fontSize = this.fontsize + "px";;
 	}
 	const currdiv2 =  this._shadowRoot.getElementById("DataLablesTop");
 	if(currdiv2)
@@ -345,6 +347,7 @@ setstyles()
 		currdiv2.style.top = (boxheight/4 - 20) + "px";
 		currdiv2.style.left =  "0px" ;
 		currdiv2.style.width ="100%";
+		currdiv2.style.fontSize = this.fontsize + "px";;
 	}
 	const currdiv3 =  this._shadowRoot.getElementById("DataLablesRight");
 	if(currdiv3)
@@ -353,6 +356,7 @@ setstyles()
 		currdiv3.style.top = (boxheight-boxheight/3 +10) + "px";
 		currdiv3.style.left = (boxwidth -40) + "px";
 		currdiv3.style.width ="100%";
+		currdi3.style.fontSize = this.fontsize + "px";;
 	}
 	const currdiv4 =  this._shadowRoot.getElementById("DataInfo");
 	if(currdiv4)
@@ -360,6 +364,7 @@ setstyles()
 		//currdiv4.textContent= "1200" + " | " + "300" ;
 		currdiv4.textContent= this._shadowRoot.host.offsetWidth + " | " + this._shadowRoot.host.offsetHeight ;
 		currdiv4.style.top = (boxheight-boxheight/4.5 ) + "px";
+		currdiv4.style.fontSize = this.fontsize + "px";;
 	}
 
 }
