@@ -368,6 +368,7 @@ setstyles(ndata)
 	{
 		//currdiv4.textContent= "1200" + " | " + "300" ;
 		var tmvalue = 0;
+		var tmvalue2 = 0;
 		if (ndata)
 		{
 			if( ndata.length > 0)
