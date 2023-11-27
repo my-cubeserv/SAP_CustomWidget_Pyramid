@@ -363,6 +363,7 @@ render(ndata) {
 const hex2rgba = (hex, alpha = 1) => {
   const [r, g, b] = hex.match(/\w\w/g).map(x => parseInt(x, 16));
   return `rgba(${r},${g},${b},${alpha})`;
+};
 
 const label = ['10%', '20%', '30%', '40%'];
 	var opasity = this.opasity;
