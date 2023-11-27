@@ -281,14 +281,10 @@ constructor() {
 		if(data)
 		{
 			this.wData = this.parseData(JSON.parse(JSON.stringify(data)));
-							
-			/*if (this.wData.length === 0) {
-				this._shadowRoot.innerHTML = "<h1>Select \"Include Parent Elements\" in Hierarchy Menu.</h1>";
-				return;
-			}*/			
 		}
 		
 		this.render(this.wData);
+		this.setstyles(this.wData);
 	}
 
 	//Collect data array
@@ -325,7 +321,7 @@ resize(w,h)
 	}
 }
 
-setstyles()
+setstyles(ndata)
 {
 	var boxwidth = this._shadowRoot.host.offsetWidth;
         var boxheight = this._shadowRoot.host.offsetHeight;
@@ -367,7 +363,13 @@ setstyles()
 	if(currdiv4)
 	{
 		//currdiv4.textContent= "1200" + " | " + "300" ;
-		currdiv4.textContent= this._shadowRoot.host.offsetWidth + " | " + this._shadowRoot.host.offsetHeight ;
+		var tmvalue = 0;
+		if (ndata)
+		{
+			if( ndata.length > 0)
+			{ tmvalue = ndata[0];}	
+		}
+		currdiv4.textContent= tmvalue + " | " + this._shadowRoot.host.offsetHeight ;
 		currdiv4.style.top = (boxheight-boxheight/4.5 ) + "px";
 		currdiv4.style.fontSize = this.fontsize + "px";;
 	}
@@ -424,7 +426,8 @@ const label = ['10%', '20%', '30%', '40%'];
           biscolor6,
           'rgba(0, 0, 0, 1)'
         ];
-	const borderradus = this.bradius;
+	var bordradius = this.bradius;
+	const borderradus = bordradius;
 	const borderwith = 1;
 	var tmvalue = 0;
 	if (ndata)
