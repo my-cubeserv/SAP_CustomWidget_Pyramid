@@ -139,7 +139,7 @@
         parseInt(aRgbHex[0], 16),
         parseInt(aRgbHex[1], 16),
         parseInt(aRgbHex[2], 16),
-	copasity
+	this.opasity
     ];
     return aRgb;
 }
@@ -213,7 +213,7 @@
 // set value of properties
         set color(v) {
 		var curropasity = get opasity();
-            this._shadowRoot.getElementById("ap_textcolor").value = convercolor(v, curropasity ) ;
+            this._shadowRoot.getElementById("ap_textcolor").value = convercolor(v) ;
         }
         set value(v) {
             this._shadowRoot.getElementById("ap_selectedTop").value = v;
