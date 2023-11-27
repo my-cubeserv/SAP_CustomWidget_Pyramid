@@ -237,7 +237,7 @@ constructor() {
 			this.title = oChangedProperties["title"];
 		}
 	 	if ("bradius" in oChangedProperties) {
-			this.title = oChangedProperties["bradius"];
+			this.bradius = oChangedProperties["bradius"];
 		}
 		this.redrawChart();
     }
