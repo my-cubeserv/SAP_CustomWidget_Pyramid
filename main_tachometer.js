@@ -83,13 +83,13 @@ constructor() {
 	this.wData = [];
 		this.properties = {
 	       	color: "#000000",
-		fontsize: 20,
-		bgcolor1: "#FF1A68,02",
-		bgcolor2: "#36A2EB,02",
-		bgcolor3: "#FFCE56,02",
-		bgcolor4: "#4BC0C0,02",
-		bgcolor5: "#9966FF,02",
-		bgcolor6: "#FF9F40,02",
+		fontsize: 12,
+		bgcolor1: 'rgba(255, 26, 104, 0.2)',
+		bgcolor2: 'rgba(54, 162, 235, 0.2)',
+		bgcolor3: 'rgba(255, 206, 86, 0.2)',
+		bgcolor4: 'rgba(75, 192, 192, 0.2)',
+		bgcolor5: 'rgba(153, 102, 255, 0.2)',
+		bgcolor6: 'rgba(255, 159, 64, 0.2)',
 		von1: 0,
 		von2: 20,
 		von3: 40,
@@ -356,12 +356,12 @@ render(ndata) {
 //**** end functions *****
 const label = ['10%', '20%', '30%', '40%'];
 	var opasity = '0,2';
-	var bis1 = this.bis1 + "," + opasity;
-	var bis2 = this.bis2 + "," + opasity;
-	var bis3 = this.bis3 + "," + opasity;
-	var bis4 = this.bis4 + "," + opasity;
-	var bis5 = this.bis5 + "," + opasity;
-	var bis6 = this.bis6 + "," + opasity;
+	var bis1 = this.bis1;
+	var bis2 = this.bis2;
+	var bis3 = this.bis3;
+	var bis4 = this.bis4;
+	var bis5 = this.bis5;
+	var bis6 = this.bis6;
 	const datas = [bis1, bis2, bis3, bis4, bis5, bis6];
 	var biscolor1 = this.bgcolor1;
 	var biscolor2 = this.bgcolor2;
