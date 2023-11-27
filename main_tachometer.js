@@ -328,7 +328,7 @@ setstyles()
 	const currtitle =  this._shadowRoot.getElementById("title");
 	if (currtitle)
 	{
-		currdiv.textContent= this.title ;
+		currtitle.textContent= this.title ;
 	}
 	//  set data labels
 	const currdiv =  this._shadowRoot.getElementById("DataLablesLeft");
