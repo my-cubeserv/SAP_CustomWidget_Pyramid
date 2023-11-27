@@ -255,7 +255,6 @@ constructor() {
 				}
 				case "error": {
 					this.redrawChart();
-					//this.setstyles();					
 					return;
 				} case "success": {
 					this.redrawChart();
@@ -372,10 +371,17 @@ setstyles(ndata)
 		if (ndata)
 		{
 			if( ndata.length > 0)
-			{ tmvalue = ndata[0][0];
-			 if( ndata.length > 1){
-			 tmvalue2 = ndata[1][0]; }
+			{ 
+				tmvalue = ndata[0][0];
+				 if( ndata.length > 1)
+				 {
+				 tmvalue2 = ndata[1][0]; 
+				 }
+				currdiv4.textContent= tmvalue + " | " + tmvalue2;
 			}
+		}
+		else {
+			currdiv4.textContent= "" + " | " + "";
 		}
 		currdiv4.textContent= tmvalue + " | " + tmvalue2;
 		currdiv4.style.top = (boxheight-boxheight/4.5 ) + "px";
