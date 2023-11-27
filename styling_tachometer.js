@@ -12,6 +12,11 @@
                 <td><input id="ap_fontsize" type="number" name="fontSize" max="30" min="6"></td>\
             </tr>\
 			<tr>\
+	     <tr>\
+                <td>Opasity</td>\
+                <td><input id="ap_opasity" type="number" name="opasity" max="1" min="0"></td>\
+            </tr>\
+		<tr>\
                 <td>Background color 1</td>\
 	       <td><input id="ap_von1" type="number" name="von" max="100" min="0"></td>\
 	       <td><input id="ap_bis1" type="number" name="bis" max="100" min="0"></td>\
@@ -85,7 +90,8 @@
 				bis3: this.bis3,
 				bis4: this.bis4,
 				bis5: this.bis5,
-				bis6: this.bis6
+				bis6: this.bis6,
+				coloropasity: this.opasity
                             }
                         }
                     }));
@@ -118,23 +124,35 @@
 			bis3: this.bis3,
 			bis4: this.bis4,
 			bis5: this.bis5,
-			bis6: this.bis6
+			bis6: this.bis6,
+			coloropasity: this.opasity
                     }
                 }
             }));
             return false;
         }
-
+// function conver hex to rgb
+ convercolor(hcolor, copasity) 
+{
+    var aRgbHex = hcolor.match(/.{1,2}/g);
+    var aRgb = [
+        parseInt(aRgbHex[0], 16),
+        parseInt(aRgbHex[1], 16),
+        parseInt(aRgbHex[2], 16),
+	copasity
+    ];
+    return aRgb;
+}
 //get value of properties
 		get color() {
 			return this._shadowRoot.getElementById("ap_textcolor").value;
 		}
 		get value() {
-            return this._shadowRoot.getElementById("ap_selectedTop").value;
-        }
+           	 return this._shadowRoot.getElementById("ap_selectedTop").value;
+        	}
 		get fontsize() {
-            return this._shadowRoot.getElementById("ap_fontsize").value;
-        }
+            	return this._shadowRoot.getElementById("ap_fontsize").value;
+      		}
 		get bgcolor1() {
 			return this._shadowRoot.getElementById("ap_bgcolor1").value;
 		}
@@ -189,9 +207,12 @@
 		get bis6() {
 			return this._shadowRoot.getElementById("ap_bis6").value;
 		}
+	   	 get coloropasity() {
+			return this._shadowRoot.getElementById("ap_opasity").value;
+		}
 // set value of properties
         set color(v) {
-            this._shadowRoot.getElementById("ap_textcolor").value = v;
+            this._shadowRoot.getElementById("ap_textcolor").value = convercolor(v, opasityvalue);
         }
         set value(v) {
             this._shadowRoot.getElementById("ap_selectedTop").value = v;
@@ -253,7 +274,9 @@
 	    set bis6(v) {
             this._shadowRoot.getElementById("ap_bis6").value = v;
         }
-
+	set coloropasity(v) {
+            this._shadowRoot.getElementById("ap_opasity").value = v;
+        }
     }
 
     customElements.define('chart-style', TachometerChartProperties);
