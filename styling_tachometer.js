@@ -13,26 +13,38 @@
             </tr>\
 			<tr>\
                 <td>Background color 1</td>\
+	       <td><input id="ap_von1" type="number" name="von" max="100" min="0"></td>\
+	       <td><input id="ap_bis1" type="number" name="bis" max="100" min="0"></td>\
                 <td><input id="ap_bgcolor1" type="color" name="bgColor1"></td>\
             </tr>\
 			<tr>\
                 <td>Background color 2</td>\
+	    	<td><input id="ap_von2" type="number" name="von" max="100" min="0"></td>\
+	      	<td><input id="ap_bis2" type="number" name="bis" max="100" min="0"></td>\
                 <td><input id="ap_bgcolor2" type="color" name="bgColor2"></td>\
             </tr>\
 			<tr>\
                 <td>Background color 3</td>\
+	   	<td><input id="ap_von3" type="number" name="von" max="100" min="0"></td>\
+	       <td><input id="ap_bis3" type="number" name="bis" max="100" min="0"></td>\
                 <td><input id="ap_bgcolor3" type="color" name="bgColor3"></td>\
             </tr>\
 			<tr>\
                 <td>Background color 4</td>\
+	      <td><input id="ap_von4" type="number" name="von" max="100" min="0"></td>\
+	       <td><input id="ap_bis4" type="number" name="bis" max="100" min="0"></td>\
                 <td><input id="ap_bgcolor4" type="color" name="bgColor4"></td>\
             </tr>\
 			<tr>\
                 <td>Background color 5</td>\
+	       <td><input id="ap_von5" type="number" name="von" max="100" min="0"></td>\
+	       <td><input id="ap_bis5" type="number" name="bis" max="100" min="0"></td>\
                 <td><input id="ap_bgcolor5" type="color" name="bgColor5"></td>\
             </tr>\
 			<tr>\
                 <td>Background color 6</td>\
+	       <td><input id="ap_von6" type="number" name="von" max="100" min="0"></td>\
+	       <td><input id="ap_bis6" type="number" name="bis" max="100" min="0"></td>\
                 <td><input id="ap_bgcolor6" type="color" name="bgColor6"></td>\
             </tr>\
             </table>\
@@ -55,13 +67,25 @@
                         "detail": {
                             "properties": {
                                 color: this.color,
-								fontsize: this.fontsize,
-								bgColor1: this.bgColor1,
-								bgColor2: this.bgColor2,
-								bgColor3: this.bgColor3,
-								bgColor4: this.bgColor4,
-								bgColor5: this.bgColor5,
-								bgColor6: this.bgColor6
+				fontsize: this.fontsize,
+				bgColor1: this.bgColor1,
+				bgColor2: this.bgColor2,
+				bgColor3: this.bgColor3,
+				bgColor4: this.bgColor4,
+				bgColor5: this.bgColor5,
+				bgColor6: this.bgColor6,
+				von1: this.von1,
+				von2: this.von2,
+				von3: this.von3,
+				von4: this.von4,
+				von5: this.von5,
+				von6: this.von6,
+				bis1: this.bis1,
+				bis2: this.bis2,
+				bis3: this.bis3,
+				bis4: this.bis4,
+				bis5: this.bis5,
+				bis6: this.bis6
                             }
                         }
                     }));
@@ -76,18 +100,32 @@
                 "detail": {
                     "properties": {
                         color: this.color,
-						fontsize: this.fontsize,
-						bgcolor1: this.bgcolor1,
-						bgcolor2: this.bgcolor2,
-						bgcolor3: this.bgcolor3,
-						bgcolor4: this.bgcolor4,
-						bgcolor5: this.bgcolor5,
-						bgcolor6: this.bgcolor6
+			fontsize: this.fontsize,
+			bgcolor1: this.bgcolor1,
+			bgcolor2: this.bgcolor2,
+			bgcolor3: this.bgcolor3,
+			bgcolor4: this.bgcolor4,
+			bgcolor5: this.bgcolor5,
+			bgcolor6: this.bgcolor6,
+			von1: this.von1,
+			von2: this.von2,
+			von3: this.von3,
+			von4: this.von4,
+			von5: this.von5,
+			von6: this.von6,
+			bis1: this.bis1,
+			bis2: this.bis2,
+			bis3: this.bis3,
+			bis4: this.bis4,
+			bis5: this.bis5,
+			bis6: this.bis6
                     }
                 }
             }));
             return false;
         }
+
+//get value of properties
 		get color() {
 			return this._shadowRoot.getElementById("ap_textcolor").value;
 		}
@@ -115,6 +153,43 @@
 		get bgcolor6() {
 			return this._shadowRoot.getElementById("ap_bgcolor6").value;
 		}
+	    	get von1() {
+			return this._shadowRoot.getElementById("ap_von1").value;
+		}
+	    	get von2() {
+			return this._shadowRoot.getElementById("ap_von2").value;
+		}
+	    	get von3() {
+			return this._shadowRoot.getElementById("ap_von3").value;
+		}
+	   	 get von4() {
+			return this._shadowRoot.getElementById("ap_von4").value;
+		}
+	   	 get von5() {
+			return this._shadowRoot.getElementById("ap_von5").value;
+		}
+	   	 get von6() {
+			return this._shadowRoot.getElementById("ap_von6").value;
+		}
+	   	 get bis1() {
+			return this._shadowRoot.getElementById("ap_bis1").value;
+		}
+		get bis2() {
+			return this._shadowRoot.getElementById("ap_bis2").value;
+		}
+		get bis3() {
+			return this._shadowRoot.getElementById("ap_bis3").value;
+		}
+		get bis4() {
+			return this._shadowRoot.getElementById("ap_bis4").value;
+		}
+		get bis5() {
+			return this._shadowRoot.getElementById("ap_bis5").value;
+		}
+		get bis6() {
+			return this._shadowRoot.getElementById("ap_bis6").value;
+		}
+// set value of properties
         set color(v) {
             this._shadowRoot.getElementById("ap_textcolor").value = v;
         }
@@ -141,6 +216,42 @@
         }
 		set bgcolor6(v) {
             this._shadowRoot.getElementById("ap_bgcolor6").value = v;
+        }
+	    set von1(v) {
+            this._shadowRoot.getElementById("ap_von1").value = v;
+        }
+	     set von2(v) {
+            this._shadowRoot.getElementById("ap_von2").value = v;
+        }
+	     set von3(v) {
+            this._shadowRoot.getElementById("ap_von3").value = v;
+        }
+	     set von4(v) {
+            this._shadowRoot.getElementById("ap_von4").value = v;
+        }
+	     set von5(v) {
+            this._shadowRoot.getElementById("ap_von5").value = v;
+        }
+	     set von6(v) {
+            this._shadowRoot.getElementById("ap_von6").value = v;
+        }
+	     set bis1(v) {
+            this._shadowRoot.getElementById("ap_bis1").value = v;
+        }
+	    set bis2(v) {
+            this._shadowRoot.getElementById("ap_bis2").value = v;
+        }
+	    set bis3(v) {
+            this._shadowRoot.getElementById("ap_bis3").value = v;
+        }
+	    set bis4(v) {
+            this._shadowRoot.getElementById("ap_bis4").value = v;
+        }
+	    set bis5(v) {
+            this._shadowRoot.getElementById("ap_bis5").value = v;
+        }
+	    set bis6(v) {
+            this._shadowRoot.getElementById("ap_bis6").value = v;
         }
 
     }
