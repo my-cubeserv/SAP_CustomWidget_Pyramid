@@ -455,7 +455,7 @@ const label = ['10%', '20%', '30%', '40%'];
 	var datavalue = tmvalue;
  
  
-		const data = {
+/*		const data = {
       labels: label,  // legend
       datasets: [{
         label: 'Percentage value',
@@ -468,9 +468,43 @@ const label = ['10%', '20%', '30%', '40%'];
 	cutot:'95%',
 	borderRadius: borderradus,
 	needleValue: datavalue
-      }],
-	hoverOffset: 1
+      }]
+    };*/
+//**************************************
+	const data = {
+      labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+      datasets: [{
+        label: 'Weekly Sales',
+        data: [33, 33, 33 ],
+        backgroundColor: [ 
+          'rgba(255, 26, 104, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(153, 102, 255, 0.2)',
+          'rgba(255, 159, 64, 0.2)',
+          'rgba(0, 0, 0, 0.2)'
+        ],
+        borderColor: [
+          'rgba(255, 26, 104, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)',
+          'rgba(0, 0, 0, 1)'
+        ],
+								  
+        borderWidth: 1,
+		circumference: 180,
+		rotation: 270,
+		cutot:'95%',
+		borderRadius: 10,
+		 needleValue: 50
+      }]
+
     };
+	//************************
 	const gaugeNeedle ={
 		id: 'gaugeNeedle',
 		afterDatasetsDraw(chart, args, plugins){
