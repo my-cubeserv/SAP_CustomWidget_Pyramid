@@ -452,7 +452,8 @@ const label = ['10%', '20%', '30%', '40%'];
 		}
 
 	}
-	const datavalue = tmvalue;
+	const datavalue = 50;
+ 
 		const data = {
       labels: label,  // legend
       datasets: [{
