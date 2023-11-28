@@ -338,8 +338,8 @@ setstyles(ndata)
 	if(currdiv)
 	{
 		currdiv.textContent= "0%" ;
-		currdiv.style.top =  (boxheight-boxheight/3 +10) + "px";
-		currdiv.style.width ="100%";
+		currdiv.style.top =  (boxheight - 20) + "px";
+		//currdiv.style.width ="100%";
 		currdiv.style.fontSize = this.fontsize + "px";
 		currdiv.style.color = this.color;
 	}
@@ -347,9 +347,9 @@ setstyles(ndata)
 	if(currdiv2)
 	{
 		currdiv2.textContent= "50%" ;
-		currdiv2.style.top = (boxheight/4 - 20) + "px";
-		currdiv2.style.left =  "0px" ;
-		currdiv2.style.width ="100%";
+		currdiv2.style.top = "5px";
+		currdiv2.style.left =  (boxwidth/2) + "px";
+		//currdiv2.style.width ="100%";
 		currdiv2.style.fontSize = this.fontsize + "px";
 		currdiv2.style.color = this.color;
 	}
@@ -357,9 +357,9 @@ setstyles(ndata)
 	if(currdiv3)
 	{
 		currdiv3.textContent= "100%" ;
-		currdiv3.style.top = (boxheight-boxheight/3 +10) + "px";
-		currdiv3.style.left = (boxwidth -40) + "px";
-		currdiv3.style.width ="100%";
+		currdiv3.style.top = boxheight-20 ) + "px";
+		currdiv3.style.left = (boxwidth -20) + "px";
+		//currdiv3.style.width ="100%";
 		currdiv3.style.fontSize = this.fontsize + "px";
 		currdiv3.style.color = this.color;
 	}
@@ -386,7 +386,7 @@ setstyles(ndata)
 			currdiv4.textContent= "" ; //+ " | " + "";
 		}
 		currdiv4.textContent= tmvalue; // + " | " + tmvalue2;
-		currdiv4.style.top = (boxheight-boxheight/4.5 ) + "px";
+		currdiv4.style.top = (boxheight + 5) + "px";
 		currdiv4.style.fontSize = this.fontsize + "px";
 		currdiv4.style.color = this.color;
 	}
