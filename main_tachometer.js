@@ -267,12 +267,6 @@ constructor() {
 	redrawChart() {            
 		// indicate result state: "error" and an appropriate message
 		const myDataSource = this._props.myDataSource;
-		/*if (!myDataSource.data.length
-			|| Object.keys(myDataSource.metadata.dimensions).length === 0
-			|| Object.keys(myDataSource.metadata.mainStructureMembers).length === 0) {
-			this._shadowRoot.innerHTML = "<h1>No data</h1>";
-			return;
-		}*/
 		this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
 				
 		const data = myDataSource.data;
@@ -281,6 +275,10 @@ constructor() {
 		{
 			this.wData = this.parseData(JSON.parse(JSON.stringify(data)));
 		}
+		else {
+			this.wData = 0
+		}
+			
 		this.width = this._shadowRoot.host.offsetWidth;
 		this.height = this._shadowRoot.host.offsetHeight;
 		this._needsRedraw = true;
