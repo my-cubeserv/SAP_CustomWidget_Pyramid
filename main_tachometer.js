@@ -96,12 +96,12 @@ constructor() {
 		von4: 50,
 		von5: 60,
 		von6: 70,
-		bis1: 10,
+		bis1: 20,
 		bis2: 20,
-		bis3: 20,
-		bis4: 30,
+		bis3: 10,
+		bis4: 20,
 		bis5: 10,
-		bis6: 9,
+		bis6: 20,
 		opasity: 1,
 		title: '',
 		bradius: 0
@@ -383,7 +383,7 @@ setstyles(ndata)
 		else {
 			currdiv4.textContent= "" ; //+ " | " + "";
 		}
-		currdiv4.textContent= tmvalue + " | " + tmvalue2;
+		currdiv4.textContent= tmvalue; // + " | " + tmvalue2;
 		currdiv4.style.top = (boxheight-boxheight/4.5 ) + "px";
 		currdiv4.style.fontSize = this.fontsize + "px";
 		currdiv4.style.color = this.color;
@@ -470,24 +470,7 @@ const label = ['10%', '20%', '30%', '40%'];
 	needleValue: datavalue
       }]
     };
-//**************************************
-/*	const data = {
-      labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-      datasets: [{
-        label: 'Weekly Sales',
-        data: [33, 33, 33 ],
-        backgroundColor: backgroundcolors,
-        borderColor: bordercolor,
-        borderWidth: borderwith,					  
-      	circumference: 180,
-		rotation: 270,
-		cutot:'95%',
-		borderRadius: 10,
-		 needleValue: 50
-      }]
 
-    };*/
-	//************************
 	const gaugeNeedle ={
 		id: 'gaugeNeedle',
 		afterDatasetsDraw(chart, args, plugins){
@@ -540,7 +523,7 @@ const label = ['10%', '20%', '30%', '40%'];
 		  aspectRation: 1.8,
 			plugins:
 			{ legend: { display: false },		
-			// tooltip: {enabled: false}
+			tooltip: {enabled: false}
 			}
 		  },
 		  plugins:[gaugeNeedle]
