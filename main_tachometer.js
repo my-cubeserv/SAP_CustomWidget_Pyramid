@@ -415,14 +415,14 @@ const label = ['10%', '20%', '30%', '40%'];
 	var bis4 = this.bis4;
 	var bis5 = this.bis5;
 	var bis6 = this.bis6;
-	const datas = [bis1, bis2, bis3, bis4, bis5, bis6];
+        var datas = [bis1, bis2, bis3, bis4, bis5, bis6];
 	var biscolor1 = hex2rgba(this.bgcolor1 , opasity);
 	var biscolor2 = hex2rgba(this.bgcolor2 , opasity);
 	var biscolor3 = hex2rgba(this.bgcolor3 , opasity);
 	var biscolor4 = hex2rgba(this.bgcolor4 , opasity);
 	var biscolor5 = hex2rgba(this.bgcolor5 , opasity);
 	var biscolor6 = hex2rgba(this.bgcolor6 , opasity);
-	const backgroundcolors = [
+	var backgroundcolors = [
           biscolor1,
           biscolor2,
           biscolor3,
@@ -431,7 +431,7 @@ const label = ['10%', '20%', '30%', '40%'];
           biscolor6,
           'rgba(0, 0, 0, 0.2)'
         ];
-	const bordercolor = [
+	var bordercolor = [
           biscolor1,
           biscolor2,
           biscolor3,
@@ -441,8 +441,8 @@ const label = ['10%', '20%', '30%', '40%'];
           'rgba(0, 0, 0, 1)'
         ];
 	var bordradius = this.bradius;
-	const borderradus = bordradius;
-	const borderwith = 1;
+	var borderradus = bordradius;
+	var borderwith = 1;
 	var tmvalue = 0;
 	if (ndata)
 	{
@@ -452,7 +452,8 @@ const label = ['10%', '20%', '30%', '40%'];
 		}
 
 	}
-	const datavalue = 50;
+	var datavalue = tmvalue;
+ 
  
 		const data = {
       labels: label,  // legend
@@ -462,11 +463,11 @@ const label = ['10%', '20%', '30%', '40%'];
         backgroundColor: backgroundcolors,
         borderColor: bordercolor,
         borderWidth: borderwith,
-		circumference: 180,
-		rotation: 270,
-		cutot:'95%',
-		borderRadius: borderradus,
-		 needleValue: datavalue
+	circumference: 180,
+	rotation: 270,
+	cutot:'95%',
+	borderRadius: borderradus,
+	needleValue: datavalue
       }],
 	hoverOffset: 1
     };
