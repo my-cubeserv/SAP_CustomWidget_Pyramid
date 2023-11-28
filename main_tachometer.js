@@ -4,7 +4,7 @@ tmpl.innerHTML = `
  <style>
         .chartCard {
         width: 100%;
-		//height: 90%;
+		height: 100%;
 		border-color: black;
 		margin-bottom:0px;
 		padding-bottom: 0px;
@@ -315,7 +315,8 @@ resize(w,h)
 	const tmcard= this._shadowRoot.getElementById("chartcard");
 	if(tmcard)
 	{
-		tmcard.style.width = w;	
+		//tmcard.style.width = w;	
+		tmcard.style.height = h;	
 	}
 }
 
