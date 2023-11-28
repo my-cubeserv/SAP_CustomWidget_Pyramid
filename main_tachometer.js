@@ -528,7 +528,7 @@ const label = ['10%', '20%', '30%', '40%'];
 		  type: 'doughnut',
 		  data,
 		  options: {
-		  aspectRatio: 2,
+		  aspectRatio: 1.75,
 			plugins:
 			{ legend: { display: false },		
 			tooltip: {enabled: false}
