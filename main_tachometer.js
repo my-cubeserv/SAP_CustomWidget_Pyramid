@@ -6,12 +6,11 @@ tmpl.innerHTML = `
         width: 100%;
 		height: 100%;
 		border-color: black;
-		margin-bottom:0px;
-		padding-bottom: 0px;
+		margin:0px;
+		padding: 0px;
 	//	background: #F58EFF;
   		//background: transparent;
-		padding-top: 0px;	
-		margin-top:0px;	
+
       }
       .chartBox {
        		 width: 100%;
@@ -24,6 +23,8 @@ tmpl.innerHTML = `
 		margin:0px;
 		padding-bottom: 0px;
 		padding-top: 0px;
+		display: inline-block;
+		vertical-align: top;
       }
 	  .Title {
 		text-align: center;
