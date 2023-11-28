@@ -172,22 +172,22 @@
 			return this._shadowRoot.getElementById("ap_bgcolor6").value;
 		}
 	    	get von1() {
-			return this._shadowRoot.getElementById("ap_von1").value;
+			//return this._shadowRoot.getElementById("ap_von1").value;
 		}
 	    	get von2() {
-			return this._shadowRoot.getElementById("ap_von2").value;
+			//return this._shadowRoot.getElementById("ap_von2").value;
 		}
 	    	get von3() {
-			return this._shadowRoot.getElementById("ap_von3").value;
+			//return this._shadowRoot.getElementById("ap_von3").value;
 		}
 	   	 get von4() {
 			return this._shadowRoot.getElementById("ap_von4").value;
 		}
 	   	 get von5() {
-			return this._shadowRoot.getElementById("ap_von5").value;
+			//return this._shadowRoot.getElementById("ap_von5").value;
 		}
 	   	 get von6() {
-			return this._shadowRoot.getElementById("ap_von6").value;
+			//return this._shadowRoot.getElementById("ap_von6").value;
 		}
 	   	 get bis1() {
 			return this._shadowRoot.getElementById("ap_bis1").value;
@@ -245,22 +245,22 @@
             this._shadowRoot.getElementById("ap_bgcolor6").value = v;
         }
 	    set von1(v) {
-            this._shadowRoot.getElementById("ap_von1").value = v;
+           // this._shadowRoot.getElementById("ap_von1").value = v;
         }
 	     set von2(v) {
-            this._shadowRoot.getElementById("ap_von2").value = v;
+           // this._shadowRoot.getElementById("ap_von2").value = v;
         }
 	     set von3(v) {
-            this._shadowRoot.getElementById("ap_von3").value = v;
+           // this._shadowRoot.getElementById("ap_von3").value = v;
         }
 	     set von4(v) {
-            this._shadowRoot.getElementById("ap_von4").value = v;
+            //this._shadowRoot.getElementById("ap_von4").value = v;
         }
 	     set von5(v) {
-            this._shadowRoot.getElementById("ap_von5").value = v;
+            //this._shadowRoot.getElementById("ap_von5").value = v;
         }
 	     set von6(v) {
-            this._shadowRoot.getElementById("ap_von6").value = v;
+           //this._shadowRoot.getElementById("ap_von6").value = v;
         }
 	     set bis1(v) {
             this._shadowRoot.getElementById("ap_bis1").value = v;
