@@ -521,7 +521,7 @@ const label = ['10%', '20%', '30%', '40%'];
 		  aspectRation: 1.8,
 			plugins:
 			{ legend: { display: false },		
-			 tooltip: {enabled: false}
+			// tooltip: {enabled: false}
 			}
 		  },
 		  plugins:[gaugeNeedle]
