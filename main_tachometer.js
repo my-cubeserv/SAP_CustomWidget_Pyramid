@@ -3,8 +3,8 @@ let tmpl = document.createElement('template');
 tmpl.innerHTML = `
  <style>
         .chartCard {
-        width: 90%;
-		height: 100%;
+        width: 100%;
+		height: 90%;
 		border-color: black;
 		margin-bottom:0px;
 		padding-bottom: 0px;
