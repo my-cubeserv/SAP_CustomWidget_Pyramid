@@ -3,8 +3,8 @@ let tmpl = document.createElement('template');
 tmpl.innerHTML = `
  <style>
         .chartCard {
-        width: 100%;
-		height: 100%;
+       // width: 100%;
+	//	height: 100%;
 		border-color: black;
 		margin:0px;
 		padding: 0px;
@@ -13,7 +13,7 @@ tmpl.innerHTML = `
 
       }
       .chartBox {
-       		 width: 100%;
+       	//	 width: 100%;
 		//height:100%;		
 		padding-left: 30px;	
 		padding-right: 30px;	
@@ -528,7 +528,7 @@ const label = ['10%', '20%', '30%', '40%'];
 		  type: 'doughnut',
 		  data,
 		  options: {
-		  aspectRation: 1.8,
+		  aspectRatio: 1.7,
 			plugins:
 			{ legend: { display: false },		
 			tooltip: {enabled: false}
