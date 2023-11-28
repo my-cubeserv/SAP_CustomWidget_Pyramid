@@ -23,8 +23,8 @@ tmpl.innerHTML = `
 		margin:0px;
 		padding-bottom: 0px;
 		padding-top: 0px;
-		display: inline-block;
-		vertical-align: top;
+//		display: inline-block;
+	//	vertical-align: top;
       }
 	  .Title {
 		text-align: center;
@@ -358,7 +358,7 @@ setstyles(ndata)
 	{
 		currdiv3.textContent= "100%" ;
 		currdiv3.style.top = (boxheight-20 ) + "px";
-		currdiv3.style.left = (boxwidth -20) + "px";
+		currdiv3.style.left = (boxwidth -10) + "px";
 		//currdiv3.style.width ="100%";
 		currdiv3.style.fontSize = this.fontsize + "px";
 		currdiv3.style.color = this.color;
@@ -386,7 +386,7 @@ setstyles(ndata)
 			currdiv4.textContent= "" ; //+ " | " + "";
 		}
 		currdiv4.textContent= tmvalue; // + " | " + tmvalue2;
-		currdiv4.style.top = (boxheight + 5) + "px";
+		currdiv4.style.top = (boxheight) + "px";
 		currdiv4.style.fontSize = this.fontsize + "px";
 		currdiv4.style.color = this.color;
 	}
