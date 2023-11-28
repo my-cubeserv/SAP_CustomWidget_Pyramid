@@ -20,7 +20,7 @@ tmpl.innerHTML = `
 		position: relative;
 		//background: green;
 		background: transparent;
-		margin-top: 2px;
+		margin-top: 5px;
 		padding-bottom: 0px;
 		padding-top: 0px;
 //		display: inline-block;
