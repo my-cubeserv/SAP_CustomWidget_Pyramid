@@ -16,7 +16,7 @@ tmpl.innerHTML = `
        	//	 width: 100%;
 		//height:100%;		
 		padding-left: 30px;	
-		padding-right: 0px;	
+		padding-right: 5px;	
 		position: relative;
 		//background: green;
 		background: transparent;
