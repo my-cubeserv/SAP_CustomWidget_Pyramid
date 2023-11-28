@@ -386,7 +386,7 @@ setstyles(ndata)
 			currdiv4.textContent= "" ; //+ " | " + "";
 		}
 		currdiv4.textContent= tmvalue; // + " | " + tmvalue2;
-		currdiv4.style.top = (boxheight-20) + "px";
+		currdiv4.style.top = (boxheight-15) + "px";
 		currdiv4.style.fontSize = this.fontsize + "px";
 		currdiv4.style.color = this.color;
 	}
