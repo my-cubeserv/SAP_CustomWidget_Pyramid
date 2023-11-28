@@ -181,7 +181,7 @@
 			//return this._shadowRoot.getElementById("ap_von3").value;
 		}
 	   	 get von4() {
-			return this._shadowRoot.getElementById("ap_von4").value;
+			//return this._shadowRoot.getElementById("ap_von4").value;
 		}
 	   	 get von5() {
 			//return this._shadowRoot.getElementById("ap_von5").value;
