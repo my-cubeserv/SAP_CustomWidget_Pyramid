@@ -42,8 +42,8 @@ tmpl.innerHTML = `
 	 .labeltop {
 	  position: absolute;
 	  font-size:12px;
-   	 text-align: center;
-     	  width: 100%;
+   	 //text-align: center;
+     	 // width: 100%;
 	 // background: orange;
           margin:0px;
 	  padding: 0px;
