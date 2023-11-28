@@ -338,7 +338,7 @@ setstyles(ndata)
 	if(currdiv)
 	{
 		currdiv.textContent= "0%" ;
-		currdiv.style.top =  (boxheight - 20) + "px";
+		currdiv.style.top =  (boxheight - 30) + "px";
 		//currdiv.style.width ="100%";
 		currdiv.style.fontSize = this.fontsize + "px";
 		currdiv.style.color = this.color;
@@ -357,8 +357,8 @@ setstyles(ndata)
 	if(currdiv3)
 	{
 		currdiv3.textContent= "100%" ;
-		currdiv3.style.top = (boxheight-20 ) + "px";
-		currdiv3.style.left = (boxwidth -10) + "px";
+		currdiv3.style.top = (boxheight-30 ) + "px";
+		currdiv3.style.left = (boxwidth -30) + "px";
 		//currdiv3.style.width ="100%";
 		currdiv3.style.fontSize = this.fontsize + "px";
 		currdiv3.style.color = this.color;
@@ -386,7 +386,7 @@ setstyles(ndata)
 			currdiv4.textContent= "" ; //+ " | " + "";
 		}
 		currdiv4.textContent= tmvalue; // + " | " + tmvalue2;
-		currdiv4.style.top = (boxheight) + "px";
+		currdiv4.style.top = (boxheight-20) + "px";
 		currdiv4.style.fontSize = this.fontsize + "px";
 		currdiv4.style.color = this.color;
 	}
@@ -528,7 +528,7 @@ const label = ['10%', '20%', '30%', '40%'];
 		  type: 'doughnut',
 		  data,
 		  options: {
-		  aspectRatio: 1.7,
+		  aspectRatio: 1.75,
 			plugins:
 			{ legend: { display: false },		
 			tooltip: {enabled: false}
