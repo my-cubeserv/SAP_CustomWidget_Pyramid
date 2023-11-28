@@ -251,6 +251,7 @@ constructor() {
 			switch (myDataSource.state) {
 				case "loading": {
 					this._shadowRoot.innerHTML = "Loading...";
+					his.redrawChart();
 					return;
 				}
 				case "error": {
