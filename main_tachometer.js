@@ -96,12 +96,12 @@ constructor() {
 		von4: 50,
 		von5: 60,
 		von6: 70,
-		bis1: 20,
-		bis2: 40,
-		bis3: 50,
-		bis4: 60,
-		bis5: 70,
-		bis6: 100,
+		bis1: 10,
+		bis2: 20,
+		bis3: 20,
+		bis4: 30,
+		bis5: 10,
+		bis6: 9,
 		opasity: 1,
 		title: '',
 		bradius: 0
@@ -455,7 +455,7 @@ const label = ['10%', '20%', '30%', '40%'];
 	var datavalue = tmvalue;
  
  
-/*		const data = {
+		const data = {
       labels: label,  // legend
       datasets: [{
         label: 'Percentage value',
@@ -469,9 +469,9 @@ const label = ['10%', '20%', '30%', '40%'];
 	borderRadius: borderradus,
 	needleValue: datavalue
       }]
-    };*/
+    };
 //**************************************
-	const data = {
+/*	const data = {
       labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
       datasets: [{
         label: 'Weekly Sales',
@@ -486,7 +486,7 @@ const label = ['10%', '20%', '30%', '40%'];
 		 needleValue: 50
       }]
 
-    };
+    };*/
 	//************************
 	const gaugeNeedle ={
 		id: 'gaugeNeedle',
