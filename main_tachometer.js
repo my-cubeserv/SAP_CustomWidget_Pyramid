@@ -494,8 +494,8 @@ const label = ['10%', '20%', '30%', '40%'];
 
 			//Needle
 			ctx.beginPath();
-			ctx.strokeStyle = 'darkgrey';
-			ctx.fillStyle = 'darkgrey';
+			ctx.strokeStyle = 'black'; //  'darkgrey';
+			ctx.fillStyle = 'black';
 
 			ctx.moveTo(0 - 5, 0);
 
