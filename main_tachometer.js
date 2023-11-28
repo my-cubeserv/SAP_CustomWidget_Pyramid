@@ -422,6 +422,12 @@ const label = ['10%', '20%', '30%', '40%'];
 	var biscolor4 = hex2rgba(this.bgcolor4 , opasity);
 	var biscolor5 = hex2rgba(this.bgcolor5 , opasity);
 	var biscolor6 = hex2rgba(this.bgcolor6 , opasity);
+	var bordercolor1 = hex2rgba(this.bgcolor1 , 1);
+	var bordercolor2 = hex2rgba(this.bgcolor2 , 1);
+	var bordercolor3 = hex2rgba(this.bgcolor3 , 1);
+	var bordercolor4 = hex2rgba(this.bgcolor4 , 1);
+	var bordercolor5 = hex2rgba(this.bgcolor5 , 1);
+	var bordercolor6 = hex2rgba(this.bgcolor6 , 1);
 	var backgroundcolors = [
           biscolor1,
           biscolor2,
@@ -432,12 +438,12 @@ const label = ['10%', '20%', '30%', '40%'];
           'rgba(0, 0, 0, 0.2)'
         ];
 	var bordercolor = [
-          biscolor1,
-          biscolor2,
-          biscolor3,
-          biscolor4,
-          biscolor5,
-          biscolor6,
+          bordercolor1,
+          bordercolor2,
+          bordercolor3,
+          bordercolor4,
+          bordercolor5,
+          bordercolor6,
           'rgba(0, 0, 0, 1)'
         ];
 	var bordradius = this.bradius;
