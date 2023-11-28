@@ -358,7 +358,7 @@ setstyles(ndata)
 	{
 		currdiv3.textContent= "100%" ;
 		currdiv3.style.top = (boxheight-30 ) + "px";
-		currdiv3.style.left = (boxwidth -30) + "px";
+		currdiv3.style.left = (boxwidth -40) + "px";
 		//currdiv3.style.width ="100%";
 		currdiv3.style.fontSize = this.fontsize + "px";
 		currdiv3.style.color = this.color;
