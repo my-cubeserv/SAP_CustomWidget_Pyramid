@@ -322,14 +322,14 @@ onCustomWidgetResize() {
         this._needsRedraw = true;
 	this.resize(this.width,this.height);
 	this.redraw();
-	this.setimage();
+	this.setimage(this.width,this.height);
 	
 }
-setimage() {
+setimage( w, h) {
 	this._shadowRoot.getElementById("Chartimg").src = imgb;	
-	this._shadowRoot.getElementById("Chartimg").style.width = this._shadowRoot.host.offsetWidth;
-	this._shadowRoot.getElementById("Chartimg").style.height = this._shadowRoot.host.offsetHeight;
-	this._shadowRoot.getElementById("Tachometer").style.visibility = "hidden";
+	this._shadowRoot.getElementById("Chartimg").style.width = w;
+	this._shadowRoot.getElementById("Chartimg").style.height = h;
+	//this._shadowRoot.getElementById("Tachometer").style.visibility = "hidden";
 }
 resize(w,h)
 {
