@@ -327,8 +327,8 @@ onCustomWidgetResize() {
 }
 setimage( w, h) {
 	this._shadowRoot.getElementById("Chartimg").src = imgb;	
-	this._shadowRoot.getElementById("Chartimg").style.width = w;
-	this._shadowRoot.getElementById("Chartimg").style.height = h;
+	this._shadowRoot.getElementById("Chartimg").style.width = w-w/6;
+	this._shadowRoot.getElementById("Chartimg").style.height = h-h/6;
 	//this._shadowRoot.getElementById("Tachometer").style.visibility = "hidden";
 }
 resize(w,h)
