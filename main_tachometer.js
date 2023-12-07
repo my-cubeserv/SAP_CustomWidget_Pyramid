@@ -543,7 +543,7 @@ const label = ['10%', '20%', '30%', '40%'];
 			   animation: {
 		  onComplete: function () {
 			this._shadowRoot.getElementById("Chartimg").src = myChart.toBase64Image();
-			this._shadowRoot.getElementById("Tachometer").style.visibility = "hidden";
+			//this._shadowRoot.getElementById("Tachometer").style.visibility = "hidden";
 			this._shadowRoot.getElementById("Chartimg").style.width = "300px";
 			this._shadowRoot.getElementById("Chartimg").style.height = "150px";
 		  },
