@@ -59,6 +59,16 @@ tmpl.innerHTML = `
 	text-align: center;	
 	width: 100%;
 	  } 
+.chartimg {
+    position: absolute;
+	top: 12px;
+	left: 20px;
+	padding-left: 0px;	
+	margin-bottom: 0px;
+	margin-top: 10px;
+	padding-bottom: 0px;
+	vertical-align: top;
+   }
     </style>
      <div class="chartCard" id="chartcard">	
 	<div class="chartBox" id="chartbox">
@@ -69,7 +79,8 @@ tmpl.innerHTML = `
 <div id = "DataLablesLeft" class="labelleft" ></div>
 <div id = "DataLablesTop" class="labeltop" ></div>
 <div id = "DataLablesRight" class="labelright" ></div>	
-<div id = "DataInfo" class="datainfo"></div>	
+<div id = "DataInfo" class="datainfo"></div>
+<img id="Chartimg" src="" class="Chartimg"/>
 `;
 
 class Tachometer extends HTMLElement {	
@@ -529,6 +540,14 @@ const label = ['10%', '20%', '30%', '40%'];
 		  data,
 		  options: {
 		  aspectRatio: 1.75,
+			   animation: {
+		  onComplete: function () {
+			this._shadowRoot.getElementById("Chartimg").src = myChart.toBase64Image();
+			this._shadowRoot.getElementById("Tachometer").style.visibility = "hidden";
+			this._shadowRoot.getElementById("Chartimg").style.width = "300px";
+			this._shadowRoot.getElementById("Chartimg").style.height = "150px";
+		  },
+		},
 			plugins:
 			{ legend: { display: false },		
 			tooltip: {enabled: false}
