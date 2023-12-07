@@ -59,16 +59,6 @@ tmpl.innerHTML = `
 	text-align: center;	
 	width: 100%;
 	  } 
-.chartimg {
-    position: absolute;
-	top: 12px;
-	left: 20px;
-	padding-left: 0px;	
-	margin-bottom: 0px;
-	margin-top: 10px;
-	padding-bottom: 0px;
-	vertical-align: top;
-   }
     </style>
      <div class="chartCard" id="chartcard">	
 	<div class="chartBox" id="chartbox">
@@ -80,7 +70,6 @@ tmpl.innerHTML = `
 <div id = "DataLablesTop" class="labeltop" ></div>
 <div id = "DataLablesRight" class="labelright" ></div>	
 <div id = "DataInfo" class="datainfo"></div>
-<img id="Chartimg" src="https://my-cubeserv.github.io/CustomWidget_Tachometer/Chart.png" class="chartimg"/>
 `;
 
 class Tachometer extends HTMLElement {	
@@ -161,7 +150,6 @@ constructor() {
 	connectedCallback() {
    		this._firstConnection = true;
 		this.redraw();
-		//this.setimage();
   	}
 
 	//When the widget is removed from the html DOM of the page
@@ -322,15 +310,8 @@ onCustomWidgetResize() {
         this._needsRedraw = true;
 	this.resize(this.width,this.height);
 	this.redraw();
-	//this.setimage(this.width,this.height);
-	
 }
-setimage( w, h) {
-	this._shadowRoot.getElementById("Chartimg").src = imgb;	
-	this._shadowRoot.getElementById("Chartimg").style.width = w-w/6;
-	this._shadowRoot.getElementById("Chartimg").style.height = h-h/6;
-	//this._shadowRoot.getElementById("Tachometer").style.visibility = "hidden";
-}
+
 resize(w,h)
 {
 	const tmcard= this._shadowRoot.getElementById("chartcard");
@@ -549,12 +530,7 @@ const label = ['10%', '20%', '30%', '40%'];
 		  data,
 		  options: {
 		  aspectRatio: 1.75,
-			   animation: {
-		  onComplete: function () {
-			  imgb = myChart.toBase64Image();			
-		  },
-		},
-			plugins:
+		 plugins:
 			{ legend: { display: false },		
 			tooltip: {enabled: false}
 			}
