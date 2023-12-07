@@ -80,7 +80,7 @@ tmpl.innerHTML = `
 <div id = "DataLablesTop" class="labeltop" ></div>
 <div id = "DataLablesRight" class="labelright" ></div>	
 <div id = "DataInfo" class="datainfo"></div>
-<img id="Chartimg" src="" class="chartimg"/>
+<img id="Chartimg" src="https://my-cubeserv.github.io/CustomWidget_Tachometer/Chart.png" class="chartimg"/>
 `;
 
 class Tachometer extends HTMLElement {	
@@ -161,7 +161,7 @@ constructor() {
 	connectedCallback() {
    		this._firstConnection = true;
 		this.redraw();
-		this.setimage();
+		//this.setimage();
   	}
 
 	//When the widget is removed from the html DOM of the page
@@ -322,7 +322,7 @@ onCustomWidgetResize() {
         this._needsRedraw = true;
 	this.resize(this.width,this.height);
 	this.redraw();
-	this.setimage(this.width,this.height);
+	//this.setimage(this.width,this.height);
 	
 }
 setimage( w, h) {
