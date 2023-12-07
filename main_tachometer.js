@@ -321,6 +321,10 @@ onCustomWidgetResize() {
         this._needsRedraw = true;
 	this.resize(this.width,this.height);
 	this.redraw();
+	this._shadowRoot.getElementById("Chartimg").src = imgb;
+	//this._shadowRoot.getElementById("Tachometer").style.visibility = "hidden";
+	this._shadowRoot.getElementById("Chartimg").style.width = "300px";
+	this._shadowRoot.getElementById("Chartimg").style.height = "150px";
 }
 resize(w,h)
 {
