@@ -161,6 +161,7 @@ constructor() {
 	connectedCallback() {
    		this._firstConnection = true;
 		this.redraw();
+		this.setimage();
   	}
 
 	//When the widget is removed from the html DOM of the page
@@ -321,9 +322,10 @@ onCustomWidgetResize() {
         this._needsRedraw = true;
 	this.resize(this.width,this.height);
 	this.redraw();
+	this.setimage();
 	
 }
-setimage(){
+setimage() {
 	this._shadowRoot.getElementById("Chartimg").src = imgb;	
 	this._shadowRoot.getElementById("Chartimg").style.width = this._shadowRoot.host.offsetWidth;
 	this._shadowRoot.getElementById("Chartimg").style.height = this._shadowRoot.host.offsetHeight;
